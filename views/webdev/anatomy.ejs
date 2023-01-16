@@ -1,0 +1,283 @@
+<%- include("../subDirHeader") -%>
+
+
+<div class="lightSection">
+  <div class="row">
+    <div class="col h1ContainerLong ">
+      <h1 class="otherH1sLong">Anatomy of This Website</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="sectionTextContainer">
+        <div class="sectionTextLeft">
+          <h5>Node.js // server.js</h5>
+          <p>Since the point of this website is to prove that I can build a decent website, I should probably talk
+            a bit about how it's made</p>
+          <p>The site is overall built in Node.js and mostly put together with EJS templates. For example, all of the 
+            HTML headers and the navbar are only written once, in a header.ejs file, and then imported to each page. 
+            The Node Server passes a different page title to each page, and this is added to the header with an EJS variable.
+          </p>
+          <p>
+            The server.js file can be viewed in the code snippet to the right.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <textarea class="anatomyCodeRight" rows="13"><%- include("../../server.js") -%></textarea>
+      
+    </div>
+  </div>
+  </div>
+  <div class="darkSection">
+    <div class="row">
+      <div class="col">
+      <span class="backToTopDark"><a href="#home"><p>BACK TO TOP</p></a></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 hideAtBig">
+      <div class="sectionTextContainer">
+        <div class="sectionTextRight">
+            <h5>EJS remplates // Bootstrap carousel</h5>
+            <p>The Carousel on the main Camping & Hiking page, as well as the image galleries on the favourite places 
+              page are all seperate EJS templates and are imported at the correct time. This is mostly aesthetic rather 
+              than functional - carousels and galleries require a lot of code just repeated over and over for each image 
+              so this makes the main files much easier to deal with.
+            </p>
+            <p>It also means that I can import these entire files straight into a text area on this page for your viewing 
+              pleasure. To the left is the entire carousel construction from the Camping & Hiking page.</p>
+            
+          </div>
+        </div>
+      </div> 
+      <div class="col-lg-6 ">
+        <textarea class="anatomyCodeLeft" rows="13">
+          <%- include("../carousel") -%></textarea>
+      </div>
+      <div class="col-lg-6 hideAtSmall">
+      <div class="sectionTextContainer">
+        <div class="sectionTextRight">
+          <h5>EJS remplates // Bootstrap carousel</h5>
+            <p>The Carousel on the main Camping & Hiking page, as well as the image galleries on the favourite places 
+              page are all seperate EJS templates and are imported at the correct time. This is mostly aesthetic rather 
+              than functional - carousels and galleries require a lot of code just repeated over and over for each image 
+              so this makes the main files much easier to deal with.
+            </p>
+            <p>It also means that I can import these entire files straight into a text area on this page for your viewing 
+              pleasure. To the left is the entire carousel construction from the Camping & Hiking page.</p>
+            
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="lightSection">
+    <div class="row">
+      <div class="col">
+      <span class="backToTopLight"><a href="#home"><p>BACK TO TOP</p></a></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 ">
+        <div class="sectionTextContainer">
+          <div class="sectionTextLeft">
+          <h5>jQuery Modals</h5>
+          <p>Each image gallery on the places page has its own javascript (jquery) modal so that the arrows to click to the next image 
+          only click for the same place - i.e. all the images for Swanage cycle through and then repeat, but they don't 
+          suddenly start showing images from Cromer.        
+        </p>
+        <p>
+          One of the modal .js files can be seen in the code box to the right.
+        </p>
+      </div>
+    </div>
+  </div>
+     <div class="col-lg-6">
+       <textarea class="anatomyCodeRight" rows="13">
+       <%- include("../../public/js/swanModal.js") -%></textarea>
+     </div> 
+  </div>
+</div>
+<div class="darkSection">
+  <div class="row">
+    <div class="col">
+    <span class="backToTopDark"><a href="#home"><p>BACK TO TOP</p></a></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 hideAtBig">
+      <div class="sectionTextContainer">
+        <div class="sectionTextLeft">
+          <h5>Bootstrap</h5>
+          <p>
+          Outside of EJS the site is styled using the Bootstrap grid system as well as regular CSS.
+          The Navbar and the carousel are also Bootstrap components. The page is responsive to all manner of screen sizes and 
+          collapses gracefully the smaller you go. If you're on a desktop browser try it now! Just drag the side of the window
+          inwards and watch everything move.
+        </p>
+        <p>
+          This is most noticable with the places image galleries (code to the left). They go from 3 to 2 images a line as
+          the screen shrinks, but then the screen goes from 2 columns (overall) to 1, at which point the images go 
+          back to 3 a line, then 2 again. Follow that? 
+          </p>
+          <p>
+          This is a lot easier than you'd think in Bootstrap.
+        </p>
+    </div>
+  </div>
+</div>
+    <div class="col-lg-6">
+      <textarea class="anatomyCodeLeft" rows="13">
+        <%- include("../camping/swanageGallery") -%></textarea>
+      
+    </div> 
+    <div class="col-lg-6 hideAtSmall">
+      <div class="sectionTextContainer">
+        <div class="sectionTextRight">
+          <h5>Bootstrap</h5>
+          <p>
+          Outside of EJS the site is styled using the Bootstrap grid system as well as regular CSS.
+          The Navbar and the carousel are also Bootstrap components. The page is responsive to all manner of screen sizes and 
+          collapses gracefully the smaller you go. If you're on a desktop browser try it now! Just drag the side of the window
+          inwards and watch everything move.
+        </p>
+        <p>
+          This is most noticable with the places image galleries (code to the left). They go from 3 to 2 images a line as
+          the screen shrinks, but then the screen goes from 2 columns (overall) to 1, at which point the images go 
+          back to 3 a line, then 2 again. Follow that? 
+          </p>
+          <p>
+          This is a lot easier than you'd think in Bootstrap.
+        </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="lightSection">
+  <div class="row">
+    <div class="col">
+    <span class="backToTopLight"><a href="#home"><p>BACK TO TOP</p></a></span>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-lg-6 ">
+      <div class="sectionTextContainer">
+        <div class="sectionTextLeft">
+          <h5>CSS Media Queries</h5>
+          <p>
+            Of course Bootstrap isn't perfect, so I also have some media queries just for fine-tuning specific elements at specific 
+            page widths.
+          </p>
+          <p>
+            The ones to the right are quite fun, for a certain value of fun. Regarding the camping carousel, I wanted it 
+            on the right (design theory says people read across the top then down the left, so text to the left to start) 
+            but when the page went to single columns, I wanted it to the top.
+          </p>
+          <p>
+            So the solution? Two carousels. One on the left, the text in the middle, and one on the right.
+          </p>
+          <p>
+            The media queries then hide the left one at bigger viewport sizes, then un-hide it and hide the right one at 
+            smaller breakpoints (Bootstrap's "lg") meaning the now-visible left one goes to the top when the page breaks 
+            to a single column.
+          </p>
+    </div>
+  </div>
+</div>
+   <div class="col-lg-6">
+    <textarea rows=13 class="anatomyCodeRight">/*Media Queries 
+992px is Bootstrap's lg breakpoint 
+i.e. where page breaks from 2 cols to 1*/
+
+@media (min-width: 993px){
+  .carouselSmall{
+    display:none;
+  }
+}  
+@media (max-width: 992px){      
+.carouselBig{
+  display: none;
+}
+.sectionTextLeft, .sectionTextRight{
+  width: 100%;
+  padding: 10% 15%;
+}
+.anatomyCodeLeft{
+  margin: 10% 0 0 0;
+}
+.anatomyCodeRight{
+  margin: 0;
+}</textarea>
+  </div>
+</div>
+</div>
+</div>
+<div class="darkSection">
+  <div class="row">
+    <div class="col">
+    <span class="backToTopDark"><a href="#home"><p>BACK TO TOP</p></a></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 hideAtBig">
+    <div class="sectionTextContainer">
+      <div class="sectionTextRight">
+        <h5>Javascript</h5>
+          <p>And of course Bootstrap adds a lot of common functionality and styling, but doesn't take everything into 
+            account, nor can it possibly account for everything a designer might want to do.
+          </p>
+          <p>
+            Bootstrap very helpfully has a collapse function where you can hide an element (say a div) by default and 
+            then show it by clicking on a link or button. Obviously this is acheivable in javascript, but in Bootstrap 
+            you literally just add a couple of classes and an ID to some elements and it's done. It's incredibly effecient.
+          </p>
+          <p>
+            But then I had these buttons reading "Show More" even after you'd clicked them and already shown more.
+            So, a little javascript tweak and they now read "Show Less" after one click and then toggle between more and 
+            less with each click.
+          </p>
+          
+        </div>
+      </div>
+    </div> 
+    <div class="col-lg-6 ">
+      <textarea class="anatomyCodeLeft" rows="10">$("#minipeakbutton").on("click", function(){
+        if ($("#minipeakbutton").text() == "Show More"){
+          $("#minipeakbutton").text("Show Less");
+        }
+          else{
+          $("#minipeakbutton").text("Show More");
+          }
+        
+      });</textarea>
+    </div>
+    <div class="col-lg-6 hideAtSmall">
+    <div class="sectionTextContainer">
+      <div class="sectionTextRight">
+        <h5>Javascript</h5>
+          <p>And of course Bootstrap adds a lot of common functionality and styling, but doesn't take everything into 
+            account, nor can it possibly account for everything a designer might want to do.
+          </p>
+          <p>
+            Bootstrap very helpfully has a collapse function where you can hide an element (say a div) by default and 
+            then show it by clicking on a link or button. Obviously this is acheivable in javascript, but in Bootstrap 
+            you literally just add a couple of classes and an ID to some elements and it's done. It's incredibly effecient.
+          </p>
+          <p>
+            But then I had these buttons reading "Show More" even after you'd clicked them and already shown more.
+            So, a little javascript tweak and they now read "Show Less" after one click and then toggle between more and 
+            less with each click.
+          </p>
+          
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+<%- include("../footer") -%>
+

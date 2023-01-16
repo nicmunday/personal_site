@@ -1,0 +1,77 @@
+<!-- Images used to open the lightbox -->
+<div class=""lightboxImages">
+<div class="row">
+    <div class="col-xl-4 col-lg-6 col-md-4 col-6">
+
+    <img src="../images/place_images/swanage/1.jpg" onclick="openSwanModal();currentSwanSlide(1)" 
+    class="swanImage thumbnail clickableImage" alt="Norden Farm Campsite, Near Corfe Castle">
+  </div>
+    <div class="col-xl-4 col-lg-6 col-md-4 col-6">
+
+    <img src="../images/place_images/swanage/2.jpg" onclick="openSwanModal();currentSwanSlide(2)" 
+    class="swanImage thumbnail clickableImage" alt="Corfe Castle">
+  </div>
+    <div class="col-xl-4 col-lg-6 col-md-4 col-6">
+
+    <img src="../images/place_images/swanage/3.jpg" onclick="openSwanModal();currentSwanSlide(3)" 
+    class="swanImage thumbnail clickableImage" alt="Swanage Beach">
+  </div>
+    <div class="col-xl-4 col-lg-6 col-md-4 col-6">
+
+    <img src="../images/place_images/swanage/4.jpg" onclick="openSwanModal();currentSwanSlide(4)" 
+    class="swanImage thumbnail clickableImage" alt="Ulwell Holiday Park, Small Tent Field">
+  </div>
+    <div class="col-xl-4 col-lg-6 col-md-4 col-6">
+
+    <img src="../images/place_images/swanage/5.jpg" onclick="openSwanModal();currentSwanSlide(5)" 
+    class="swanImage thumbnail clickableImage" alt="View Over Swanage From Purbeck Way">
+  </div>
+    <div class="col-xl-4 col-lg-6 col-md-4 col-6">
+
+    <img src="../images/place_images/swanage/6.jpg" onclick="openSwanModal();currentSwanSlide(6)" 
+    class="swanImage thumbnail clickableImage" alt="Poole Harbour, Taken From Poole">
+  </div>
+  </div>
+</div>
+
+  
+  <!-- The Modal/Lightbox -->
+  <div id="swanModal" class="modal">
+    <span class="close cursor" onclick="closeSwanModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="swanSlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="../images/place_images/swanage/1.jpg" style="width:100%">
+      </div>
+      <div class="swanSlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="../images/place_images/swanage/2.jpg" style="width:100%">
+      </div>
+      <div class="swanSlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="../images/place_images/swanage/3.jpg" style="width:100%">
+      </div>
+      <div class="swanSlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="../images/place_images/swanage/4.jpg" style="width:100%">
+      </div>
+      <div class="swanSlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="../images/place_images/swanage/5.jpg" style="width:100%">
+      </div>
+      <div class="swanSlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="../images/place_images/swanage/6.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSwanSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSwanSlides(1)">&#10095;</a>
+    <!-- Caption text -->
+      <div class="caption-container">
+        <p id="swanCaption"></p>
+      </div> 
+      
+  </div>
+</div>

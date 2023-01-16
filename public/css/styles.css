@@ -1,0 +1,608 @@
+
+/* Original bg: #81f-7dd original fg: #2d7-370 nav links #215-452 #225-754*/
+
+
+/*ALL PAGES*/
+
+html {
+  background-color: #81f7dd;
+  min-height: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+p{
+  font-family: Ubuntu;
+  font-size: 1rem;
+}
+h5{
+  font-family: Ubuntu;
+  font-size: 1.4rem;
+  letter-spacing: .01rem;
+}
+.ulContainer li{
+  padding-bottom: 1rem;
+}
+
+/* LINKS */
+
+
+a{
+  color: #225754;
+  text-decoration: underline;
+}
+a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+a:visited{
+  color: #225754;
+}
+a:active{
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* BACK TO TOP LINKS */
+
+.backToTopDark a{
+  color: #81f7dd;
+  text-decoration: none;
+
+}
+.backToTopDark a:visited{
+  color: #81f7dd;
+  text-decoration: none;
+
+}
+.backToTopDark a:hover{
+  color:#81f7dd;
+  text-decoration: underline;
+}
+.backToTopLight a{
+  color:#2d7370;
+  text-decoration: none;
+
+}
+.backToTopLight a:visited{
+  right:0;
+  color:#2d7370;
+  text-decoration: none;
+
+}
+.backToTopLight a:hover{
+  right:0;
+  color:#2d7370;
+  text-decoration: underline;
+}
+
+
+.darkSection a:not(.prev, .next){
+  color: #81f7dd;
+  text-decoration: underline;
+
+}
+.darkSection a:visited:not(.prev, .next){
+  color: #81f7dd;
+  text-decoration: underline;
+
+}
+.darkSection a:hover:not(.prev, .next){
+  color:#81f7dd;
+  text-decoration: underline;
+}
+
+
+/* BUTTON LINKS */
+
+.linkButtonDark{
+  background-color:#2d7370;
+  color: #81f7dd;
+}
+.linkButtonDark:hover{
+  background-color: #81f7dd;
+  color: #2d7370;
+  text-decoration: none;
+  border: 2px solid;
+}
+.linkButtonLight:hover{
+  background-color:#2d7370;
+  color: #81f7dd;
+}
+.linkButtonLight{
+  background-color: #81f7dd;
+  color: #2d7370;
+  text-decoration: none;
+}
+
+.linkButtonLight:visited{
+  background-color: #81f7dd;
+  color: #2d7370;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*NAVBAR*/
+
+.navbar{
+  top: 0;
+  width: 100%;
+  line-height: 1.1rem;
+  background-color: #81f7dd;
+}
+.dropdown-menu{
+  background-color: #2d7370;
+  color: #81f7dd;
+}
+.navbar-brand{
+  margin-left: 1rem;
+  color:#2d7370;
+}
+.navbar-brand:hover{
+  color:black;
+}
+.navbar-brand:visited{
+  margin-left: 1rem;
+  color:#2d7370;
+}
+.navbar-item{
+  padding: 0 1rem;
+}
+.nav-link:not(.sub-nav-link){
+  color: #2d7370;
+  font-weight: 600;
+}
+.nav-link:hover{
+  color: #2d7370;
+  text-decoration: underline;
+}
+.nav-link:visited:not(.sub-nav-link){
+  color: #2d7370;
+  font-weight: 600;
+}
+.nav-link:active{
+  color: #000;
+  text-decoration: underline;
+}
+.sub-nav-link{
+  color: #81f7dd;
+  font-weight: 600;
+}
+.sub-nav-link:visited{
+  color: #81f7dd;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sub-nav-link:hover{
+  text-decoration: none;
+  background-color: #81f7dd;
+  color: #2d7370;
+  font-weight: 600;
+}
+
+
+/* END NAVBAR */
+
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
+
+.lightSection{
+  /* background-color: #81f7dd;*/
+  background-color: #81f7dd ;
+  color:#2d7370;
+  text-align: center;
+}
+.lightSection h3{
+  font-size: 3rem;
+  color: #2d7370;
+  margin-top: 4%;
+}
+.darkSection{
+  background-color: #2d7370;
+  color:#81f7dd;
+  text-align: center;
+}
+.darkSection h3{
+  font-size: 3rem;
+  color: #81f7dd;
+  margin-top: 4%;
+}
+.backToTopLight, .backToTopDark{
+  position: absolute;
+  left:5px;
+}
+.backToTopDark p, .backToTopLight p{
+  font-size: 1rem;
+}
+h1, h2, h3{
+  font-family: Tangerine;
+}
+.sectionTextLeft{
+  width: 60%;
+  margin: 2rem 0 2rem 20%;
+  /* font-weight:450; */
+}
+.sectionTextRight{
+    width: 60%; 
+    margin: 2rem 10% 2rem 20%;
+}
+.sectionTextLeftWithHeading{
+  width: 60%;
+  margin: 0 0 2rem 20%;
+}
+.sectionTextRightWithHeading{
+    width: 60%; 
+    margin: 0 0 2rem 20%;
+}
+.sectionTextContainer{
+  text-align: left;
+}
+
+
+/* END ALL PAGES */
+
+
+
+
+
+/*ALL PAGES EXCEPT MAIN*/
+
+.otherH1s, .otherH1sLong{
+  color:#2d7370;
+  font-size:6rem;
+  width:100%;
+  padding:0 20%;
+}
+.h1Container{
+  width:100%;
+  padding: 0 70px;
+}
+
+.h1ContainerLong{
+  width:100%;
+  padding: 0 70px;
+}
+
+/* END NON MAIN */
+
+
+
+
+
+/*MAIN PAGE */
+
+
+
+#mainTitle {
+    color:#2d7370;
+    font-size:9rem;
+
+  padding:0 20%;
+}
+.selfie{
+  margin: 6% 22% 0 0;
+  width: 300px;
+  height: 300px;
+  border-radius:100%;
+}
+.smallSelfie{
+  width: 150px;
+  height: 150px;
+  margin: 6% auto;
+  border-radius:100%;
+}
+.aboutBox p{
+    padding: 0 23% 0 17%;
+    color:#2d7370;
+    text-align: left;
+}
+
+/* END MAIN */
+
+
+
+
+/*  WEBDEV  */
+
+/* ANATOMY */
+.anatomyCodeLeft{
+  width:70%;
+  margin: 2rem 20%;
+}
+.anatomyCodeRight{
+  width:70%;
+  margin: 2rem 20%;
+}
+.anatomyTextContainer{
+  text-align: left;
+}
+.codeSnippetContainer{
+  /* background-color: black; */
+  width: 60%;
+  margin-left: 20%;
+}
+pre{
+  text-align: left;
+  background-color: #000;
+  padding-bottom: 0;
+}
+
+/* END WEBDEV */
+
+
+
+
+
+/* CAMPING MAIN */
+
+.campingLeftText{
+  margin: 10% 15% 0 15%;
+}
+.campingRightText{
+  margin: 15% 15% 10% 15%;
+}
+.campingButtons{
+  font-weight: bold;
+  width: 100px;
+  margin: 0 25px;
+}
+
+/* END CAMPING */
+
+
+
+
+/* PLACES */
+
+
+.placesTextWrapper{
+  width:80%;
+  margin: 0% 5% 0 5%;
+}
+.leftPlaceImageWithText{
+  max-width: 70%;
+  float: left;
+  padding: 20px;
+}
+.rightPlaceImage{
+  max-width: 70%;
+  margin: 6% 0;
+  max-height:500px;
+}
+.rightPlaceImageWithText{
+  width: 70%;
+  float: right;
+  padding: 20px;
+}
+.leftPlaceImage{
+  width: 70%;
+  margin: 6% 0;
+}
+.thumbnail{
+  width: 200px;
+  height: 150px;
+  margin: 5% 0;
+}
+.clickableImage:hover{
+  cursor: pointer;
+}
+.copyright{
+  padding-top:4rem;
+}
+
+/* END POLACES */
+
+
+*/Carousel */
+
+.carousel-control-prev{
+  opacity: .75;
+}
+.carousel-control-next{
+  opacity: .75;
+}
+.carousel-indicators{
+  opacity: .75;
+}
+.carousel{
+  margin-top: 10%;
+}
+
+
+
+
+/* GEAR */
+
+.linkList{
+  list-style-type: none;
+}
+.gearThumbnail1{
+  width: 300px;
+  margin: 25% 0 ;
+}
+.gearThumbnail2{
+  width: 300px;
+  margin: 25% 0 ;
+}
+.gearTextLeft{
+  text-align: left;
+  width: 60%;
+  margin: 10% 0 10% 20%;
+}
+.gearTextRight{
+  text-align: left;
+    width: 60%; 
+    margin: 10% 10% 10% 20%;
+}
+
+
+/* CONTACT */
+
+.contact{
+  background-color: #81f7dd;
+  color: #2d7370;
+  text-align: center;
+  padding:30px 0;
+}
+.contact h2{
+  font-size: 4rem;
+}
+.contactIcon:hover{
+  color: black;
+}
+
+/* END CONTACT */
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY BREAKPOINTS 992, 768, 576 == Bootstrap lg, md, sm  */
+
+@media (max-width: 1400px){
+  /* Bootstrap xxl breakpoint */
+  .gearThumbnail1{
+    width: 300px;
+    margin: 4% 0 2% 0 ;
+  }.gearThumbnail2{
+    width: 300px;
+    margin: 2% 0 4% 0 ;
+  }
+.gearTextLeft{
+  margin: 10% 0 5% 20%;
+}
+.gearTextRight{
+  margin: 10% 0 0 20%;
+}
+}
+@media (max-width: 1300px){
+  #mainTitle{
+    font-size: 8rem;
+  }
+
+}
+@media (max-width: 1150px){
+  #mainTitle{
+    font-size: 7rem;
+  }
+  .otherH1sLong{
+    font-size: 5rem;
+  }
+  .emptyOuter{
+    display:none;
+  }
+
+  .sectionTextRight{
+    line-height: 100%;
+  }
+}
+
+/* END BIGGER WIDTH MEDIA QUERIES */
+
+
+@media (min-width: 993px){
+.carouselSmall, .hideAtBig, .smallSelfieBox{
+  display:none;
+}
+}
+
+@media (max-width: 992px){
+  #topLeft, .empty,  .selfieBox, .carouselBig, .hideAtSmall{
+    display: none;
+  }
+  .navbar-item{
+    margin:auto;
+  }
+  #mainTitle{
+  padding-left:17%;
+  font-size: 5rem;
+  }
+  .contactIcon{
+  padding-left:10%
+  }
+  
+  .sectionTextLeft{
+    margin: 10% auto;
+  }
+  .sectionTextRight p{
+    line-height: 100%;
+  }
+  .sectionTextLeftWithHeading{
+    margin: 0 10% 10% 10% auto;
+  }
+  .sectionTextRightWithHeading{
+    margin: 0 10% 10% 10% auto;
+  }
+  .anatomyCodeLeft, .anatomyCodeRight{
+    margin: 0 auto 10%;
+    font-size: 1rem;
+  }
+.h1ContainerLong{
+  width:100%;
+  padding: 0;
+}
+.otherH1sLong{
+  color:#2d7370;
+  font-size:2.9rem;
+  width:100%;
+  padding:0 20%;
+}
+.lightSection h3, .darkSection h3{
+  font-size: 2rem;
+}
+.aboutBox p{
+    padding: 0 17% 0 17%;
+}
+.campingRightText{
+  margin: 0% 15% 10% 15%;
+}
+}
+
+/* END 992 WIDTH MEDIA QUERIES */
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 550px){
+  #mainTitle{
+    font-size: 4.5rem;
+    padding-left:17%;
+  }
+  .otherH1s{
+    font-size: 3.5rem;
+  }
+}
+
+/* Brand #2d7370
+Gradient #62B6B7 50%, #97DECE
+nav links #439A97

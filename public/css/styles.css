@@ -439,11 +439,7 @@ pre{
 .linkList{
   list-style-type: none;
 }
-.gearThumbnail1{
-  width: 300px;
-  margin: 25% 0 ;
-}
-.gearThumbnail2{
+.gearThumbnail1, .gearThumbnail2{
   width: 300px;
   margin: 25% 0 ;
 }
@@ -569,26 +565,20 @@ pre{
     width:300px;
     height: 200px;
   }
-  .gearTextLeft{
+  .gearTextLeft,   .sectionTextLeftWithHeading{
     width: 100%;
     margin: 0;
     padding:0;
+    line-height: 1.2;
   }
-  .gearTextLeft p{
+  .gearTextLeft p, .sectionTextLeftWithHeading p{
     padding: 5%;
   }
-  /* .gearTextLeft h5{
-    margin: 0 1% 0 5%;
-  } */
+  .gearThumbnail1, .gearThumbnail2{
+    width: 400px;
+  }
   .row{
     bs-gutter-x:0;
-  }
-  .sectionTextLeftWithHeading{
-    width: 100%;
-    margin: 0;
-  }
-  .sectionTextLeftWithHeading p{
-    padding: 20px;
   }
   .sectionTextRightWithHeading{
     width: 100%;
@@ -631,7 +621,11 @@ pre{
   width:100%;
   padding:0 20%;
 } */
+.h1Container{
+  width: 100%;
+}
 h1, .otherH1s{
+  width: 100%;
   font-size: 9rem;
 }
 h2{

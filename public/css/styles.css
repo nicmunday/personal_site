@@ -134,7 +134,7 @@ a:active{
 .navbar{
   top: 0;
   width: 100%;
-  line-height: 1.1rem;
+  line-height: 2rem;
   background-color: #81f7dd;
 }
 .dropdown-menu{
@@ -538,25 +538,34 @@ pre{
   padding-left:17%;
   font-size: 5rem;
   }
+  p{
+    font-size: 3rem;
+  }
   .contactIcon{
   padding-left:10%
   }
   
   .sectionTextLeft{
+    width: 100%;
     margin: 10% auto;
   }
   .sectionTextRight p{
+    width: 100%;
     line-height: 100%;
   }
   .sectionTextLeftWithHeading{
+    width: 100%;
     margin: 0 10% 10% 10% auto;
   }
   .sectionTextRightWithHeading{
+    width: 100%;
     margin: 0 10% 10% 10% auto;
   }
   .anatomyCodeLeft, .anatomyCodeRight{
+
+    width: 100%;
     margin: 0 auto 10%;
-    font-size: 1rem;
+    font-size: 3rem;
   }
 .h1ContainerLong{
   width:100%;

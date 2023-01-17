@@ -8,9 +8,9 @@ html {
   background-color: #81f7dd;
   min-height: 100%;
 }
-body{
+/* body{
   overflow-x: hidden;
-}
+} */
 p{
   font-family: Ubuntu;
   font-size: 1rem;
@@ -142,7 +142,7 @@ a:active{
   color: #81f7dd;
 }
 .navbar-brand{
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   color:#2d7370;
 }
 .navbar-brand:hover{
@@ -155,7 +155,7 @@ a:active{
 .navbar-item{
   padding: 0 1rem;
 }
-.nav-link:not(.sub-nav-link){
+.nav-link{
   color: #2d7370;
   font-weight: 600;
 }
@@ -163,9 +163,9 @@ a:active{
   color: #2d7370;
   text-decoration: underline;
 }
-.nav-link:visited:not(.sub-nav-link){
+.nav-link:visited{
   color: #2d7370;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .nav-link:active{
   color: #000;
@@ -174,10 +174,12 @@ a:active{
 .sub-nav-link{
   color: #81f7dd;
   font-weight: 600;
+  /* color:red; */
 }
 .sub-nav-link:visited{
   color: #81f7dd;
-  font-weight: 600;
+  /* font-weight: 600;
+  color:red; */
   text-decoration: none;
 }
 .sub-nav-link:hover{
@@ -291,7 +293,6 @@ h1, h2, h3{
 #mainTitle {
     color:#2d7370;
     font-size:9rem;
-
   padding:0 20%;
 }
 .selfie{
@@ -534,11 +535,17 @@ pre{
   #topLeft, .empty,  .selfieBox, .carouselBig, .hideAtSmall, .backToTopDark, .backToTopLight{
     display: none;
   }
+  .navbar{
+    line-height: 3rem;
+  }
+  .navbar-link, .sub-navbar-link{
+    font-weight: 400;
+  }
   .navbar-item{
     margin:auto;
   }
   #mainTitle{
-  padding-left:auto;
+  padding: 5% auto;
   font-size: 11rem;
   }
   p{
@@ -559,7 +566,7 @@ pre{
   .sectionTextRight p{
     width: 100%;
     line-height: 100%;
-    margin: 10% 2% 0 3%;
+    /* margin: 10% 2% 0 3%; */
   }
   .sectionTextLeftWithHeading{
     width: 100%;
@@ -601,7 +608,10 @@ h4{
   font-size: 6rem;
 }
 h5{
-  font-size: 5rem;
+  font-size: 4rem;
+}
+contact h2{
+  font-size: 8rem;
 }
 .aboutBox p{
   width:100%;
@@ -632,9 +642,9 @@ h5{
     font-size: 4.5rem;
     padding-left:17%;
   } */
-  .otherH1s{
+  /* .otherH1s{
     font-size: 3.5rem;
-  }
+  } */
 }
 
 /* Brand #2d7370

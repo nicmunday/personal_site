@@ -3,19 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nic Munday - <%= pageName %></title>
+    <title>Nic Munday - <%= pageName %>
+    </title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat|Ubuntu|Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat|Ubuntu|Tangerine:wght@700&display=swap"
+        rel="stylesheet">
     <!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|" rel="stylesheet">-->
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">--->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
     <!-- My CSS Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
@@ -27,52 +31,56 @@
 </head>
 
 <body>
-<span  id="home"></span>
+    <span id="home"></span>
     <div>
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="/"><i class="fa-sharp fa-solid fa-house fa-2x"></i></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleContainer" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarToggleContainer">
-    <ul class="navbar-nav ms-auto">
-        <ui class="navbar-item">
-            <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" id="webDevDropdown" 
-                data-bs-toggle="dropdown" aria-expanded="false">
-                    Web Design
-                </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="webDevDropdown">
-                    <!-- <li><a class="dropdown-item" href="/webdev">Introduction</a></li> -->
-                  <li><a class="dropdown-item sub-nav-link" href="/webdev/anatomy">Anatomy Of This Site</a></li>
-                  <li><a class="dropdown-item sub-nav-link" href="/webdev/portfolio">Website Portfolio</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/"><i class="fa-sharp fa-solid fa-house fa-2x"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleContainer" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleContainer">
+                <ul class="navbar-nav ms-auto">
+                    <ui class="navbar-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="webDevDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Web Design
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="webDevDropdown">
+                                <!-- <li><a class="dropdown-item" href="/webdev">Introduction</a></li> -->
+                                <li><a class="dropdown-item sub-nav-link" href="/webdev/anatomy">Anatomy Of This
+                                        Site</a></li>
+                                <li><a class="dropdown-item sub-nav-link" href="/webdev/portfolio">Website Portfolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ui>
+                    <ui class="navbar-item">
+                        <a class="nav-link" href="/python">Python Programming</a>
+                    </ui>
+                    <ui class="navbar-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="campingDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">Camping & Hiking</a>
+                            <ul class="dropdown-menu" aria-labelledby="campingDropdown">
+                                <li><a class="dropdown-item sub-nav-link" href="/camping">Camping & Hiking Home</a></li>
+                                <li><a class="dropdown-item sub-nav-link" href="/camping/places">My favourite Places</a>
+                                </li>
+                                <li><a class="dropdown-item sub-nav-link" href="/camping/gear">Gear Thoughts &
+                                        Reviews</a></li>
+                            </ul>
+                        </div>
+                    </ui>
+                    <ui class="navbar-item">
+                        <a class="nav-link" href="/sight">Sight Loss</a>
+                    </ui>
+                    <ui class="navbar-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </ui>
                 </ul>
-              </div>
-        </ui>
-        <ui class="navbar-item">
-            <a class="nav-link" href="/python">Python Programming</a>
-        </ui>
-        <ui class="navbar-item">
-            <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" id="campingDropdown" 
-                data-bs-toggle="dropdown" aria-expanded="false">Camping & Hiking</a>
-                <ul class="dropdown-menu" aria-labelledby="campingDropdown">
-                    <li><a class="dropdown-item sub-nav-link" href="/camping">Camping & Hiking Home</a></li>
-                    <li><a class="dropdown-item sub-nav-link" href="/camping/places">My favourite Places</a></li>
-                    <li><a class="dropdown-item sub-nav-link" href="/camping/gear">Gear Thoughts & Reviews</a></li>
-                </ul>
-              </div>
-        </ui>
-        <ui class="navbar-item">
-            <a class="nav-link" href="/sight">Sight Loss</a>
-        </ui>
-        <ui class="navbar-item">
-            <a class="nav-link" href="#contact">contact</a>
-        </ui>
-    </ul>
+            </div>
+        </nav>
     </div>
-</nav>
-</div>
-
-

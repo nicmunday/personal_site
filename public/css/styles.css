@@ -134,7 +134,7 @@ a:active{
 .navbar{
   top: 0;
   width: 100%;
-  line-height: 2rem;
+  line-height: 10rem;
   background-color: #81f7dd;
 }
 .dropdown-menu{
@@ -528,7 +528,8 @@ pre{
 }
 
 @media (max-width: 992px){
-  #topLeft, .empty,  .selfieBox, .carouselBig, .hideAtSmall{
+  #main
+  #topLeft, .empty,  .selfieBox, .carouselBig, .hideAtSmall, .backToTopDark, .backToTopLight{
     display: none;
   }
   .navbar-item{
@@ -536,55 +537,74 @@ pre{
   }
   #mainTitle{
   padding-left:17%;
-  font-size: 5rem;
+  font-size: 11rem;
   }
   p{
     font-size: 3rem;
   }
   .contactIcon{
-  padding-left:10%
+  /* padding-left:10% */
+
   }
   
   .sectionTextLeft{
     width: 100%;
-    margin: 10% auto;
+    margin: 10% 2% 0 3%;
   }
   .sectionTextRight p{
     width: 100%;
     line-height: 100%;
+    margin: 10% 2% 0 3%;
   }
   .sectionTextLeftWithHeading{
     width: 100%;
-    margin: 0 10% 10% 10% auto;
+    margin: 10% 2% 0 3%;
   }
   .sectionTextRightWithHeading{
     width: 100%;
-    margin: 0 10% 10% 10% auto;
+    margin: 10% 2% 0 3%;
   }
   .anatomyCodeLeft, .anatomyCodeRight{
 
     width: 100%;
-    margin: 0 auto 10%;
-    font-size: 3rem;
+    margin: 10% 2% 0 3%;
+    /* font-size: 3rem; */
   }
 .h1ContainerLong{
   width:100%;
   padding: 0;
 }
-.otherH1sLong{
+/* .otherH1sLong{
   color:#2d7370;
   font-size:2.9rem;
   width:100%;
   padding:0 20%;
+} */
+h1{
+  font-size: 9rem;;
+}
+h2{
+  font-size: 8rem;
 }
 .lightSection h3, .darkSection h3{
-  font-size: 2rem;
+  font-size: 7rem;
+}
+h3{
+  font-size: 7rem;
+}
+h4{
+  font-size: 6rem;
+}
+h5{
+  font-size: 5rem;
 }
 .aboutBox p{
-    padding: 0 17% 0 17%;
+  width:100%;
+  margin: 10% 2% 0 3%;
 }
 .campingRightText{
-  margin: 0% 15% 10% 15%;
+  width:100%;
+  margin: 10% 2% 0 3%;
 }
 }
 
@@ -602,11 +622,11 @@ pre{
 }
 
 
-@media (max-width: 550px){
+/* @media (max-width: 550px){
   #mainTitle{
     font-size: 4.5rem;
     padding-left:17%;
-  }
+  } */
   .otherH1s{
     font-size: 3.5rem;
   }

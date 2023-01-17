@@ -5,15 +5,23 @@
 /*ALL PAGES*/
 
 html {
+  border: 0;
+  padding: 0;
+  margin: 0;
   background-color: #81f7dd;
   min-height: 100%;
 }
-/* body{
-  overflow-x: hidden;
-} */
+body, .col-lg-6, .col, .row{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 p{
   font-family: Ubuntu;
   font-size: 1rem;
+}
+ul{
+  text-align: left;
 }
 h5{
   font-family: Ubuntu;
@@ -21,7 +29,7 @@ h5{
   letter-spacing: .01rem;
 }
 .ulContainer li{
-  padding-bottom: 1rem;
+  padding: 5rem;
 }
 
 /* LINKS */
@@ -142,7 +150,7 @@ a:active{
   color: #81f7dd;
 }
 .navbar-toggler-icon{
-  padding: 40px;
+  padding: 80px;
 }
 .navbar-brand{
   /* margin-left: 1rem; */
@@ -538,15 +546,30 @@ pre{
   #topLeft, .empty,  .selfieBox, .carouselBig, .hideAtSmall, .backToTopDark, .backToTopLight{
     display: none;
   }
-  .navbar{
+  /* .navbar{
     line-height: 3rem;
-  }
-  .navbar-link, .sub-navbar-link{
+    width: 115%;
+    padding: 0 50px;
+    
+  } */
+  .nav-link, .sub-nav-link, .navbar-item, .nav-lnk:visited, .sub-nav-link:visited{
     font-weight: 400;
+    width: 100%;
+    font-size: 4rem;
+    padding:15px 50px;
   }
-  .navbar-item{
-    margin:auto;
+  .nav-link, .sub-nav-link, .navbar-item{
+    background-color: #2d7370;
+    color: #81f7dd !important;
+    
   }
+
+  .sub-nav-link, .sub-nav-link:visited{
+    padding: 50px 0;
+    background-color: #81f7dd;
+    color: #2d7370 !important;
+  }
+
   #mainTitle{
   padding: 5%;
   font-size: 11rem;
@@ -555,7 +578,11 @@ pre{
     font-size: 3rem;
   }
   .aboutBox{
+    width: 100%;
     padding: 5% 3% 3% 3%;
+  }
+  .aboutBox p{
+    padding:0 60px;
   }
   /* .contactIcon{
   /* padding-left:10% */
@@ -565,42 +592,31 @@ pre{
     width:300px;
     height: 200px;
   }
-  .gearTextLeft,   .sectionTextLeftWithHeading{
+  .gearTextLeft, .sectionTextLeft,   .sectionTextLeftWithHeading, .sectionTextRight, .sectionTextRightWithHeading, .campingLeftText, .campingRightText{
     width: 100%;
+    padding: 0;
     margin: 0;
-    padding:0;
     line-height: 1.2;
   }
-  .gearTextLeft p, .sectionTextLeftWithHeading p{
-    padding: 5%;
+  .gearTextLeft p, .sectionTextLeft p, .sectionTextLeftWithHeading p, .sectionTextRight p, .sectionTextRightWithHeading p, .campingLeftText p, .campingRightText p{
+    padding: 8%;
   }
   .gearThumbnail1, .gearThumbnail2{
-    width: 400px;
+    width: 600px;
+  }
+  .campingButtons{
+    font-weight: 500;
+    font-size: 4rem;
+    width: 350px;
+    margin: 100px 25px;
   }
   .row{
     bs-gutter-x:0;
   }
-  .sectionTextRightWithHeading{
-    width: 100%;
-    margin: 10% 2% 0 3%;
-  }
-  .sectionTextRight{
-    width:90%;
-    margin: 0;
-  }
-  .sectionTextRight p, .sectionTextRight h5{
-    margin-left: 60px;
-  }
-  .sectionTextLeft{
-    width:90%;
-    margin: 0;
-  }
-  .sectionTextLeft p, .sectionTextLeft h5{
-    margin-left: 60px;
-  }
+  
   .anatomyCodeLeft, .anatomyCodeRight{
 
-    width: 100%;
+    width: 80%;
     margin: 10% 2% 0 3%;
     /* font-size: 3rem; */
   }
@@ -615,26 +631,16 @@ pre{
   width:100%;
   padding: 0;
 }
-/* .otherH1sLong{
-  color:#2d7370;
-  font-size:2.9rem;
-  width:100%;
-  padding:0 20%;
-} */
 .h1Container{
-  width: 100%;
+  width: 90%;
 }
-h1, .otherH1s{
-  width: 100%;
+h1, .otherH1s, .otherH1sLong{
   font-size: 9rem;
 }
 h2{
   font-size: 8rem;
 }
-.lightSection h3, .darkSection h3{
-  font-size: 7rem;
-}
-h3{
+h3, .lightSection h3, .darkSection h3{
   font-size: 7rem;
 }
 h4{
@@ -650,12 +656,10 @@ h5{
   width:100%;
   margin: 10% 2% 0 3%;
 }
-.campingRightText{
-  width:100%;
-  margin: 10% 2% 0 3%;
-}
 .h5cont{
+  width:98%;
   text-align: center;
+  padding-top: 40px;
 }
 }
 
@@ -674,6 +678,13 @@ h5{
 
 
  @media (max-width: 550px){
+ }
+ @media (max-width: 600px){
+
+  .gearThumbnail1, .gearThumbnail2{
+    width: 400px;
+  }
+
  /* #mainTitle{
     font-size: 4.5rem;
     padding-left:17%;

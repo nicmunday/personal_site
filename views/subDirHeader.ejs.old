@@ -15,6 +15,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- My CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/imageGallery.css">
     <link rel="stylesheet" href="../css/styles.css">
 
     <!-- Font Awesome -->
@@ -27,7 +28,7 @@
     <span id="home"></span>
     <div>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="/"><i class="fa-sharp fa-solid fa-house fa-5x"></i></a>
+            <a class="navbar-brand" href="/"><i class="fa-sharp fa-solid fa-house fa-2x"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleContainer" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,17 +38,15 @@
                 <ul class="navbar-nav ms-auto">
                     <ui class="navbar-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="webDevDropdown"
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="websiteDropdownLink"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Web Design
                             </a>
 
-                            <ul class="dropdown-menu" aria-labelledby="webDevDropdown">
+                            <ul class="dropdown-menu" aria-labelledby="websiteDropdownLink">
                                 <!-- <li><a class="dropdown-item" href="/webdev">Introduction</a></li> -->
-                                <li><a class="dropdown-item sub-nav-link" href="/webdev/anatomy">Anatomy Of This
-                                        Site</a></li>
-                                <li><a class="dropdown-item sub-nav-link" href="/webdev/portfolio">Website Portfolio</a>
-                                </li>
+                                <li><a class="dropdown-item" href="/webdev/anatomy">Anatomy Of This Site</a></li>
+                                <li><a class="dropdown-item" href="/webdev/portfolio">Website Portfolio</a></li>
                             </ul>
                         </div>
                     </ui>
@@ -56,14 +55,12 @@
                     </ui>
                     <ui class="navbar-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" id="campingDropdown"
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="websiteDropdownLink"
                                 data-bs-toggle="dropdown" aria-expanded="false">Camping & Hiking</a>
-                            <ul class="dropdown-menu" aria-labelledby="campingDropdown">
-                                <li><a class="dropdown-item sub-nav-link" href="/camping">Camping & Hiking Home</a></li>
-                                <li><a class="dropdown-item sub-nav-link" href="/camping/places">My favourite Places</a>
-                                </li>
-                                <li><a class="dropdown-item sub-nav-link" href="/camping/gear">Gear Thoughts &
-                                        Reviews</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="websiteDropdownLink">
+                                <li><a class="dropdown-item" href="/camping">Camping & Hiking Home</a></li>
+                                <li><a class="dropdown-item" href="/camping/places">My favourite Places</a></li>
+                                <li><a class="dropdown-item" href="/camping/gear">Gear Thoughts & Reviews</a></li>
                             </ul>
                         </div>
                     </ui>

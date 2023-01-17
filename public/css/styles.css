@@ -78,17 +78,17 @@ a:active{
 }
 
 
-.darkSection a:not(.prev, .next){
+.darkSection a{
   color: #81f7dd;
   text-decoration: underline;
 
 }
-.darkSection a:visited:not(.prev, .next){
+.darkSection a:visited{
   color: #81f7dd;
   text-decoration: underline;
 
 }
-.darkSection a:hover:not(.prev, .next){
+.darkSection a:hover{
   color:#81f7dd;
   text-decoration: underline;
 }
@@ -207,20 +207,19 @@ a:active{
 /* SECTIONS */
 
 .lightSection{
-  /* background-color: #81f7dd;*/
   background-color: #81f7dd ;
   color:#2d7370;
+  text-align: center;
+}
+.darkSection{
+  background-color: #2d7370;
+  color:#81f7dd;
   text-align: center;
 }
 .lightSection h3{
   font-size: 3rem;
   color: #2d7370;
   margin-top: 4%;
-}
-.darkSection{
-  background-color: #2d7370;
-  color:#81f7dd;
-  text-align: center;
 }
 .darkSection h3{
   font-size: 3rem;
@@ -240,19 +239,23 @@ h1, h2, h3{
 .sectionTextLeft{
   width: 60%;
   margin: 2rem 0 2rem 20%;
+  text-align: left;
   /* font-weight:450; */
 }
 .sectionTextRight{
     width: 60%; 
     margin: 2rem 10% 2rem 20%;
+    text-align: left;
 }
 .sectionTextLeftWithHeading{
   width: 60%;
   margin: 0 0 2rem 20%;
+  text-align: left;
 }
 .sectionTextRightWithHeading{
     width: 60%; 
     margin: 0 0 2rem 20%;
+    text-align: left;
 }
 .sectionTextContainer{
   text-align: left;
@@ -564,24 +567,46 @@ pre{
   /* } */ 
   .thumbnail{
     width:300px;
-    heigh: 200px;
-  }
-  .sectionTextLeft{
-    width: 100%;
-    margin: 0;
-    /* margin: 15px 5px 5px 5px; */
+    height: 200px;
   }
   .gearTextLeft{
-    width: 90%;
-    margin: 3em 3em 0 3em;
+    width: 100%;
+    margin: 0;
+    padding:0;
+  }
+  .gearTextLeft p{
+    padding: 20px;
+  }
+  /* .gearTextLeft h5{
+    margin: 0 1% 0 5%;
+  } */
+  .row{
+    bs-gutter-x:0;
   }
   .sectionTextLeftWithHeading{
     width: 90%;
-    margin: 3em 3em 0 3em;
+    margin: 0;
+  }
+  .sectionTextLeftWithHeading p{
+    padding: 20px;
   }
   .sectionTextRightWithHeading{
     width: 100%;
     margin: 10% 2% 0 3%;
+  }
+  .sectionTextRight{
+    width:90%;
+    margin: 0;
+  }
+  .sectionTextRight p, .sectionTextRight h5{
+    margin-left: 60px;
+  }
+  .sectionTextLeft{
+    width:90%;
+    margin: 0;
+  }
+  .sectionTextLeft p, .sectionTextLeft h5{
+    margin-left: 60px;
   }
   .anatomyCodeLeft, .anatomyCodeRight{
 
@@ -589,6 +614,13 @@ pre{
     margin: 10% 2% 0 3%;
     /* font-size: 3rem; */
   }
+
+
+
+
+
+
+
 .h1ContainerLong{
   width:100%;
   padding: 0;
@@ -599,7 +631,7 @@ pre{
   width:100%;
   padding:0 20%;
 } */
-h1{
+h1, .otherH1s{
   font-size: 9rem;
 }
 h2{
@@ -617,7 +649,7 @@ h4{
 h5{
   font-size: 4rem;
 }
-contact h2{
+.contact h2{
   font-size: 8rem;
 }
 .aboutBox p{
@@ -627,6 +659,9 @@ contact h2{
 .campingRightText{
   width:100%;
   margin: 10% 2% 0 3%;
+}
+.h5cont{
+  text-align: center;
 }
 }
 

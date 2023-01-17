@@ -575,7 +575,7 @@ pre{
     padding:0;
   }
   .gearTextLeft p{
-    padding: 20px;
+    padding: 5%;
   }
   /* .gearTextLeft h5{
     margin: 0 1% 0 5%;
@@ -584,7 +584,7 @@ pre{
     bs-gutter-x:0;
   }
   .sectionTextLeftWithHeading{
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
   .sectionTextLeftWithHeading p{

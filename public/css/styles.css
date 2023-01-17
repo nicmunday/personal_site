@@ -141,6 +141,9 @@ a:active{
   background-color: #2d7370;
   color: #81f7dd;
 }
+.navbar-toggler-icon{
+  padding: 40px;
+}
 .navbar-brand{
   /* margin-left: 1rem; */
   color:#2d7370;
@@ -253,6 +256,7 @@ h1, h2, h3{
 }
 .sectionTextContainer{
   text-align: left;
+  width:100%
 }
 
 
@@ -406,7 +410,7 @@ pre{
   padding-top:4rem;
 }
 
-/* END POLACES */
+/* END PLACES */
 
 
 */Carousel */
@@ -545,7 +549,7 @@ pre{
     margin:auto;
   }
   #mainTitle{
-  padding: 5% auto;
+  padding: 5%;
   font-size: 11rem;
   }
   p{
@@ -558,19 +562,22 @@ pre{
   /* padding-left:10% */
 
   /* } */ 
-  
+  .thumbnail{
+    width:300px;
+    heigh: 200px;
+  }
   .sectionTextLeft{
     width: 100%;
-    margin: 10% 2% 0 3%;
+    margin: 0;
+    /* margin: 15px 5px 5px 5px; */
   }
-  .sectionTextRight p{
-    width: 100%;
-    line-height: 100%;
-    /* margin: 10% 2% 0 3%; */
+  .gearTextLeft{
+    width: 90%;
+    margin: 3em 3em 0 3em;
   }
   .sectionTextLeftWithHeading{
-    width: 100%;
-    margin: 10% 2% 0 3%;
+    width: 90%;
+    margin: 3em 3em 0 3em;
   }
   .sectionTextRightWithHeading{
     width: 100%;

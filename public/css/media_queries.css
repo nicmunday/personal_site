@@ -58,11 +58,18 @@
     p{
       font-size: 1.5rem;
     }
+    .navbar-toggler-icon{
+      padding: 40px;
+    }
     .nav-link, .sub-nav-link, .navbar-item, .nav-lnk:visited, .sub-nav-link:visited{
       font-weight: 400;
       width: 100%;
       font-size: 3rem;
       padding:15px 50px;
+    }
+
+    .lightSection{
+        background-color: red;
     }
     .nav-link, .sub-nav-link, .navbar-item{
       background-color: #2d7370;
@@ -136,7 +143,7 @@
     width: 90%;
   }
   h1, .otherH1s, .otherH1sLong{
-    font-size: 8rem;
+    font-size: 7rem;
   }
   h2{
     font-size: 7rem;
@@ -148,7 +155,7 @@
     font-size: 6rem;
   }
   h5{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .contact h2{
     font-size: 8rem;
@@ -178,6 +185,9 @@
     .gearThumbnail1, .gearThumbnail2{
         width: 400px;
     }
+    .lightSection{
+        background-color: red;
+    }
     body{
         font-size: 4rem;
         }
@@ -193,6 +203,9 @@
         font-size: 11rem;
     }
 
+    .navbar-toggler-icon{
+        padding: 60px;
+      }
     .nav-link, .sub-nav-link, .navbar-item, .nav-lnk:visited, .sub-nav-link:visited{
     font-weight: 400;
     width: 100%;
@@ -223,7 +236,7 @@
     font-size: 8rem;
   }
 
-  }
+}
   
   /* Brand #2d7370
   Gradient #62B6B7 50%, #97DECE

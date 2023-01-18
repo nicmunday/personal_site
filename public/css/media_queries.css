@@ -42,6 +42,12 @@
   /* END BIGGER WIDTH MEDIA QUERIES */
   
   
+
+
+
+
+
+
   @media (min-width: 993px){
   .carouselSmall, .hideAtBig, .smallSelfieBox{
     display:none;
@@ -53,24 +59,25 @@
       display: none;
     }
     body{
-      font-size: 1.5rem;
-    }
+        font-size: 4rem;
+        }
+
     p{
-      font-size: 1.5rem;
+        font-size: 3rem;
     }
     .navbar-toggler-icon{
-      padding: 40px;
+      padding: 60px;
     }
     .nav-link, .sub-nav-link, .navbar-item, .nav-lnk:visited, .sub-nav-link:visited{
-      font-weight: 400;
-      width: 100%;
-      font-size: 3rem;
-      padding:15px 50px;
+        font-weight: 400;
+        width: 100%;
+        font-size: 4rem;
+        padding:15px 50px;
     }
-
-    .lightSection{
-        background-color: red;
-    }    .nav-link, .sub-nav-link, .navbar-item{
+    .navbar-brand{
+    font-size: 3rem;
+    }   
+    .nav-link, .sub-nav-link, .navbar-item{
       background-color: #2d7370;
       color: #81f7dd !important;
       
@@ -80,9 +87,6 @@
       padding: 50px 0;
       background-color: #81f7dd;
       color: #2d7370 !important;
-    }
-    .navbar-brand{
-      font-size: 2rem;
     }
   
     #mainTitle{
@@ -124,8 +128,8 @@
     }
     .campingButtons{
       font-weight: 500;
-      font-size: 2.5rem;
-      width: 250px;
+      font-size: 4rem;
+      width: 300px;
       margin: 100px 25px;
     }
   .linkList li{
@@ -142,27 +146,24 @@
     width: 90%;
   }
   h1, .otherH1s, .otherH1sLong{
-    font-size: 7rem;
-  }
-  h2{
-    font-size: 7rem;
-  }
-  h3, .lightSection h3, .darkSection h3{
-    font-size: 7rem;
-  }
-  h4{
-    font-size: 6rem;
-  }
-  h5{
-    font-size: 3rem;
-  }
-  .contact h2{
-    font-size: 8rem;
-  }
-  .aboutBox p{
-    width:100%;
-    margin: 10% 2% 0 3%;
-  }
+    font-size: 9rem;
+}
+h2{
+font-size: 8rem;
+}
+h3, .lightSection h3, .darkSection h3{
+font-size: 7rem;
+}
+h4{
+font-size: 6rem;
+}
+h5{
+font-size: 4.5rem;
+}
+.contact h2{
+font-size: 8rem;
+}
+
   .h5cont{
     width:98%;
     text-align: center;

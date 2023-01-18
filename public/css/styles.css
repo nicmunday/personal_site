@@ -19,18 +19,44 @@ body, .col-lg-6, .col, .row{
 p{
   font-family: Ubuntu;
   font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .9px;
 }
-ul{
-  text-align: left;
+h1, .otherH1s, .otherH1sLong{
+  font-size:6rem;
+}
+h1, h2, .otherH1s, .otherH1sLong{
+  font-family: Tangerine;
+  color:#2d7370;
+  width:100%;
+  padding:0 20%;
+}
+.h1Container{
+  width:100%;
+  padding: 0 70px;
+}
+
+.h1ContainerLong{
+  width:100%;
+  padding: 0 70px;
 }
 h5{
-  font-family: Ubuntu;
+  font-family: Merriweather;
   font-size: 1.4rem;
-  letter-spacing: .01rem;
+  font-weight: 900;
   padding: 7% 0 0 0;
+}
+h6{
+  font-family: Merriweather;
+  font-size: 1.1rem;
+  font-weight: 900;
+  padding:  0 0 3% 0;
 }
 .center{
   text-align: center;
+}
+ul{
+  text-align: left;
 }
 .ulContainer li{
   padding: 5rem;
@@ -245,9 +271,6 @@ a:active{
 .backToTopDark p, .backToTopLight p{
   font-size: 1rem;
 }
-h1, h2{
-  font-family: Tangerine;
-}
 .sectionTextLeft{
   width: 60%;
   margin: 2rem 0 2rem 20%;
@@ -283,21 +306,7 @@ h1, h2{
 
 /*ALL PAGES EXCEPT MAIN*/
 
-h1, .otherH1s, .otherH1sLong{
-  color:#2d7370;
-  font-size:6rem;
-  width:100%;
-  padding:0 20%;
-}
-.h1Container{
-  width:100%;
-  padding: 0 70px;
-}
 
-.h1ContainerLong{
-  width:100%;
-  padding: 0 70px;
-}
 
 /* END NON MAIN */
 
@@ -391,9 +400,20 @@ pre{
 
 
 .placesTextWrapper{
+  text-align: left;
   width:80%;
-  margin: 0% 5% 0 5%;
+  margin: 3% 5% 10% 5%;
 }
+.placesPadding{
+  padding: 5% 0;
+}
+#brockSoloImage{
+  padding-bottom: 15%;
+}
+#swanSoloImage{
+  padding: 15% 0;
+}
+
 .leftPlaceImageWithText{
   max-width: 70%;
   float: left;

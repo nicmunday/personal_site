@@ -166,6 +166,9 @@ font-size: 6rem;
 h5{
 font-size: 4.5rem;
 }
+h6{
+    font-size: 3.5rem;
+}
 .contact h2{
 font-size: 8rem;
 padding: 10% 0;
@@ -178,6 +181,11 @@ padding: 10% 0;
   }
   .linkList{
     padding: 4% 0;
+  }
+
+  /* Image gallery (modal) close button */
+  .close{
+    font-size: 80px;
   }
   }
   

@@ -70,8 +70,7 @@
 
     .lightSection{
         background-color: red;
-    }
-    .nav-link, .sub-nav-link, .navbar-item{
+    }    .nav-link, .sub-nav-link, .navbar-item{
       background-color: #2d7370;
       color: #81f7dd !important;
       
@@ -184,9 +183,6 @@
   
     .gearThumbnail1, .gearThumbnail2{
         width: 400px;
-    }
-    .lightSection{
-        background-color: red;
     }
     body{
         font-size: 4rem;

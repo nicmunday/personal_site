@@ -59,7 +59,7 @@
       display: none;
     }
     body{
-        font-size: 4rem;
+        font-size: 3rem;
         }
 
     p{
@@ -110,13 +110,19 @@
       margin: 0;
       line-height: 1.4;
     }
-    .gearTextLeft p, .sectionTextLeft p, .sectionTextLeftWithHeading p, .sectionTextRight p, .sectionTextRightWithHeading p, .campingLeftText p, .campingRightText p, .placesTextWrapper p{
+    .gearTextLeft p, .sectionTextLeft p, .sectionTextLeftWithHeading p, .sectionTextRight p, .sectionTextRightWithHeading p, .campingLeftText p, .campingRightText p, .placesTextWrapper p, .showMore{
       padding: 1% 3% 0 5%;
+    }
+    .showMore{
+        font-size: 2.3rem;
     }
     .anatomyCodeLeft, .anatomyCodeRight{
       width: 80%;
       margin: 10% 2% 5% 3%;
       /* font-size: 3rem; */
+    }
+    textarea{
+        font-size: 2.5rem;;
     }
     .gearThumbnail1{
       width: 600px;
@@ -129,7 +135,7 @@
     .campingButtons{
       font-weight: 500;
       font-size: 4rem;
-      width: 300px;
+      width: 5em;
       margin: 100px 25px;
     }
   .linkList li{
@@ -162,12 +168,16 @@ font-size: 4.5rem;
 }
 .contact h2{
 font-size: 8rem;
+padding: 10% 0;
 }
 
   .h5cont{
     width:98%;
     text-align: center;
     padding-top: 40px;
+  }
+  .linkList{
+    padding: 4% 0;
   }
   }
   
@@ -182,7 +192,7 @@ font-size: 8rem;
   
 @media (max-width: 600px){
   
-    .gearThumbnail1, .gearThumbnail2{
+    /* .gearThumbnail1, .gearThumbnail2{
         width: 400px;
     }
     body{
@@ -231,7 +241,7 @@ font-size: 8rem;
   }
   .contact h2{
     font-size: 8rem;
-  }
+  } */
 
 }
   

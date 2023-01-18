@@ -283,7 +283,7 @@ h1, h2{
 
 /*ALL PAGES EXCEPT MAIN*/
 
-.otherH1s, .otherH1sLong{
+h1, .otherH1s, .otherH1sLong{
   color:#2d7370;
   font-size:6rem;
   width:100%;
@@ -450,6 +450,7 @@ pre{
 
 .linkList{
   list-style-type: none;
+  padding: 4% 10%;
 }
 .gearThumbnail1, .gearThumbnail2{
   width: 300px;

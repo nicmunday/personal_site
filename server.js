@@ -59,6 +59,12 @@ app.get("/camping/places", function(req, res) {
     res.render("camping/places.ejs", {pageName: "Favourite Places"});
 
 });
+app.get("/camping/test", function(req, res) {
+    //res.send("<h1>Hello</h1>");
+    //res.sendFile(__dirname + "/index.html");
+    res.render("camping/test.ejs", {pageName: "Favourite Places"});
+
+});
 
 app.get("/sight", function(req, res) {
     //res.send("<h1>Hello</h1>");

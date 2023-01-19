@@ -1,37 +1,37 @@
-
+<!-- Images used to open the lightbox -->
 <div class=""lightboxImages">
 <div class="row">
   <div class="col-xl-4 col-6">
-    <img src="../images/place_images/brockenhurst/1.jpg" onclick="openModal('brock', 0)" 
+    <img src="../images/place_images/brockenhurst/1.jpg" onclick="openBrockModal();currentBrockSlide(1)" 
     class="brockImage thumbnail clickableImage" alt="New Forest Ponies Hanging Out In Brockenhurst Town Centre">
   </div>
   <div class="col-xl-4 col-6">
-    <img src="../images/place_images/brockenhurst/2.jpg" onclick="openModal('brock', 1)" 
+    <img src="../images/place_images/brockenhurst/2.jpg" onclick="openBrockModal();currentBrockSlide(2)" 
     class="brockImage thumbnail clickableImage" alt="Hollands Wood Camping In The Forest Campsite - A Near Flooding Miss">
   </div>
   <div class="col-xl-4 col-6">
-    <img src="../images/place_images/brockenhurst/3.jpg" onclick="openModal('brock', 2)" 
+    <img src="../images/place_images/brockenhurst/3.jpg" onclick="openBrockModal();currentBrockSlide(3)" 
     class="brockImage thumbnail clickableImage" alt="Ford At The End Of Brockenhurst High Street">
   </div>
   <div class="col-xl-4 col-6">
-    <img src="../images/place_images/brockenhurst/4.jpg" onclick="openModal('brock', 3)" 
+    <img src="../images/place_images/brockenhurst/4.jpg" onclick="openBrockModal();currentBrockSlide(4)" 
     class="brockImage thumbnail clickableImage" alt="Miles And Miles Of Beautiful Walks">
   </div>
   <div class="col-xl-4 col-6">
-    <img src="../images/place_images/brockenhurst/5.jpg" onclick="openModal('brock', 4)" 
+    <img src="../images/place_images/brockenhurst/5.jpg" onclick="openBrockModal();currentBrockSlide(5)" 
     class="brockImage thumbnail clickableImage" alt="Pony On The Path">
   </div>
   <div class="col-xl-4 col-6">
-    <img src="../images/place_images/brockenhurst/6.jpg" onclick="openModal('brock', 5)" 
+    <img src="../images/place_images/brockenhurst/6.jpg" onclick="openBrockModal();currentBrockSlide(6)" 
     class="brockImage thumbnail clickableImage" alt="Hollands Wood Campsite, Ponies Wander Freely">
   </div>
   </div>
 </div>
 
   
- 
+  <!-- The Modal/Lightbox -->
   <div id="brockModal" class="modal">
-    <span class="close cursor" onclick="closeModal('brock')">&times;</span>
+    <span class="close cursor" onclick="closeBrockModal()">&times;</span>
     <div class="modal-content">
   
       <div class="brockSlides">
@@ -59,9 +59,9 @@
         <img src="../images/place_images/brockenhurst/6.jpg" style="width:100%">
       </div>
   
-     
-      <a class="prev" onclick="plusDefaultSlides('brock', -1)">&#10094;</a>
-      <a class="next" onclick="plusDefaultSlides('brock', 1)">&#10095;</a>
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusBrockSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusBrockSlides(1)">&#10095;</a>
     <!-- Caption text -->
       <div class="caption-container">
         <p id="brockCaption"></p>

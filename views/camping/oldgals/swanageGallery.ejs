@@ -3,32 +3,32 @@
 <div class="row">
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/swanage/1.jpg" onclick="openModal('swan', 0)" 
+    <img src="../images/place_images/swanage/1.jpg" onclick="openSwanModal();currentSwanSlide(1)" 
     class="swanImage thumbnail clickableImage" alt="Norden Farm Campsite, Near Corfe Castle">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/swanage/2.jpg" onclick="openModal('swan', 1)" 
+    <img src="../images/place_images/swanage/2.jpg" onclick="openSwanModal();currentSwanSlide(2)" 
     class="swanImage thumbnail clickableImage" alt="Corfe Castle">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/swanage/3.jpg" onclick="openModal('swan', 2)" 
+    <img src="../images/place_images/swanage/3.jpg" onclick="openSwanModal();currentSwanSlide(3)" 
     class="swanImage thumbnail clickableImage" alt="Swanage Beach">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/swanage/4.jpg" onclick="openModal('swan', 3)" 
+    <img src="../images/place_images/swanage/4.jpg" onclick="openSwanModal();currentSwanSlide(4)" 
     class="swanImage thumbnail clickableImage" alt="Ulwell Holiday Park, Small Tent Field">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/swanage/5.jpg" onclick="openModal('swan', 4)" 
+    <img src="../images/place_images/swanage/5.jpg" onclick="openSwanModal();currentSwanSlide(5)" 
     class="swanImage thumbnail clickableImage" alt="View Over Swanage From Purbeck Way">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/swanage/6.jpg" onclick="openModal('swan', 5)" 
+    <img src="../images/place_images/swanage/6.jpg" onclick="openSwanModal();currentSwanSlide(6)" 
     class="swanImage thumbnail clickableImage" alt="Poole Harbour, Taken From Poole">
   </div>
   </div>
@@ -37,7 +37,7 @@
   
   <!-- The Modal/Lightbox -->
   <div id="swanModal" class="modal">
-    <span class="close cursor" onclick="closeModal('swan')">&times;</span>
+    <span class="close cursor" onclick="closeSwanModal()">&times;</span>
     <div class="modal-content">
   
       <div class="swanSlides">
@@ -66,8 +66,8 @@
       </div>
   
       <!-- Next/previous controls -->
-      <a class="prev" onclick="plusDefaultSlides('swan', -1)">&#10094;</a>
-      <a class="next" onclick="plusDefaultSlides('swan', 1)">&#10095;</a>
+      <a class="prev" onclick="plusSwanSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSwanSlides(1)">&#10095;</a>
     <!-- Caption text -->
       <div class="caption-container">
         <p id="swanCaption"></p>

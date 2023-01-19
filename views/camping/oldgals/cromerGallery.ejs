@@ -3,32 +3,32 @@
 <div class="row">
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/cromer/1.jpg" onclick="openModal('cromer', 0)" 
+    <img src="../images/place_images/cromer/1.jpg" onclick="openCromerModal();currentCromerSlide(1)" 
     class="cromerImage thumbnail clickableImage" alt="Scenic Walk Just Outside Of Cromer">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/cromer/2.jpg" onclick="openModal('cromer', 1)" 
+    <img src="../images/place_images/cromer/2.jpg" onclick="openCromerModal();currentCromerSlide(2)" 
     class="cromerImage thumbnail clickableImage" alt="Cromer Pier">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/cromer/3.jpg" onclick="openModal('cromer', 2)" 
+    <img src="../images/place_images/cromer/3.jpg" onclick="openCromerModal();currentCromerSlide(3)" 
     class="cromerImage thumbnail clickableImage" alt="Nice Walk Just Outside Of Cromer To Old Lighthouse">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/cromer/4.jpg" onclick="openModal('cromer', 3)" 
+    <img src="../images/place_images/cromer/4.jpg" onclick="openCromerModal();currentCromerSlide(4)" 
     class="cromerImage thumbnail clickableImage" alt="Seacroft Caravan and Motorhome Club Campsite, Tent Field, Cromer">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/cromer/5.jpg" onclick="openModal('cromer', 4)" 
+    <img src="../images/place_images/cromer/5.jpg" onclick="openCromerModal();currentCromerSlide(5)" 
     class="cromerImage thumbnail clickableImage" alt="Beautiful Beach Walk Cromer To Sheringham">
   </div>
     <div class="col-xl-4 col-6">
 
-    <img src="../images/place_images/cromer/6.jpg" onclick="openModal('cromer', 5)" 
+    <img src="../images/place_images/cromer/6.jpg" onclick="openCromerModal();currentCromerSlide(6)" 
     class="cromerImage thumbnail clickableImage" alt="Sheringham Seafront">
   </div>
   </div>
@@ -37,7 +37,7 @@
   
   <!-- The Modal/Lightbox -->
   <div id="cromerModal" class="modal">
-    <span class="close cursor" onclick="closeModal('cromer')">&times;</span>
+    <span class="close cursor" onclick="closeCromerModal()">&times;</span>
     <div class="modal-content">
   
       <div class="cromerSlides">
@@ -66,8 +66,8 @@
       </div>
   
       <!-- Next/previous controls -->
-      <a class="prev" onclick="plusDefaultSlides('cromer', -1)">&#10094;</a>
-      <a class="next" onclick="plusDefaultSlides('cromer', 1)">&#10095;</a>
+      <a class="prev" onclick="plusCromerSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusCromerSlides(1)">&#10095;</a>
     <!-- Caption text -->
       <div class="caption-container">
         <p id="cromerCaption"></p>

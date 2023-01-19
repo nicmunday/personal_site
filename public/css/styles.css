@@ -183,7 +183,7 @@ a:active{
   padding: 60px;
 }
 .navbar-brand{
-  /* margin-left: 1rem; */
+  padding-left: 1rem;
   color:#2d7370;
 }
 .navbar-brand:hover{

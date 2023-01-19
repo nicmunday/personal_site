@@ -1,6 +1,6 @@
 <!-- The Modal/Lightbox -->
   <div id="defaultModal" class="modal">
-    <span class="close cursor" onclick="closeDefaultModal()">&times;</span>
+    <span class="close cursor" onclick="closeModal('default')">&times;</span>
     <div class="modal-content">
   
       <div class="defaultSlides">
@@ -53,8 +53,8 @@
   </div>
   
       <!-- Next/previous controls -->
-      <a class="prev" onclick="plusDefaultSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusDefaultSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusDefaultSlides('default', -1)">&#10094;</a>
+      <a class="next" onclick="plusDefaultSlides('default', 1)">&#10095;</a>
     <!-- Caption text -->
       <div class="caption-container">
         <p id="defaultCaption"></p>

@@ -102,9 +102,7 @@
                       All in all, I would highly recommend this tent.
                     </p>
                   </div>
-                  <!-- <button class="linkButtonLight" id="minipeakbutton" type="button" data-bs-toggle="collapse"  -->
-                  <!-- data-bs-target="#minipeakExpand" aria-expanded="false" aria-controls="multiCollapseExample2" class="showMore">Show More</button>             -->
-                  <a href="#minipeakExpand" data-bs-toggle="collapse" id="minipeakLink" class="showMore">Show More</a>
+                  <a href="#minipeakExpand" data-bs-toggle="collapse" id="minipeakLink" class="showMore" onclick="toggleShowMore('minipeakLink')">Show More</a>
                 </div>
               <!-- </div> -->
             </div>
@@ -112,12 +110,12 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xxl-6">
-                    <img src="../images/gear_images/minipeak1.jpg" onclick="openDefaultModal();currentDefaultSlide(1)"
+                    <img src="../images/gear_images/minipeak1.jpg" onclick="openModal('default', 0)"
                       class="defaultImage gearThumbnail1 clickableImage"
                       alt="Luxe Outdoor Minipeak II Tent pitched in Cromer">
                   </div>
                   <div class="col-xxl-6">
-                    <img src="../images/gear_images/minipeak2.jpg" onclick="openDefaultModal();currentDefaultSlide(2)"
+                    <img src="../images/gear_images/minipeak2.jpg" onclick="openModal('default', 1)"
                       class="defaultImage gearThumbnail2 clickableImage"
                       alt="Luxe Outdoor Minipeak II Tent pitched in Brockenhurst">
                   </div>
@@ -164,9 +162,7 @@
                       All in all, I would highly recommend this tent.
                     </p>
                   </div>
-                  <!-- <button class="linkButtonLight" id="minipeakbutton" type="button" data-bs-toggle="collapse"  -->
-                  <!-- data-bs-target="#minipeakExpand" aria-expanded="false" aria-controls="multiCollapseExample2" class="showMore">Show More</button>             -->
-                  <a href="#minipeakExpand" id="minipeakLink2" data-bs-toggle="collapse" class="showMore">Show More</a>
+                  <a href="#minipeakExpand" id="minipeakLink2" data-bs-toggle="collapse" class="showMore" onclick="toggleShowMore('minipeakLink2')">Show More</a>
                 </div>
               </div>
             </div>
@@ -255,9 +251,7 @@
                     </p>
                   </div>
 
-                  <a href="#lanshanExpand" data-bs-toggle="collapse" id="lanshanLink" class="showMore">Show More</a>
-                  <!-- <button class="linkButtonDark" id="lanshanbutton" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#lanshanExpand" aria-expanded="false" aria-controls="lanshan" class="showMore">Show More</button>             -->
+                  <a href="#lanshanExpand" data-bs-toggle="collapse" id="lanshanLink" class="showMore" onclick="toggleShowMore('lanshanLink')">Show More</a>
                 </div>
               </div>
             </div>
@@ -266,11 +260,11 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xxl-6">
-                    <img src="../images/gear_images/lanshan1.jpg" onclick="openDefaultModal();currentDefaultSlide(3)"
+                    <img src="../images/gear_images/lanshan1.jpg" onclick="openModal('default', 2)"
                       class="defaultImage gearThumbnail1 clickableImage" alt="3F UL Lanshan 1 Tent Pitched In Cromer">
                   </div>
                   <div class="col-xxl-6">
-                    <img src="../images/gear_images/lanshan2.jpg" onclick="openDefaultModal();currentDefaultSlide(4)"
+                    <img src="../images/gear_images/lanshan2.jpg" onclick="openModal('default', 3)"
                       class="defaultImage gearThumbnail2 clickableImage" alt="3F UL Lanshan 1 Tent Pitched In Swanage">
                   </div>
                 </div>
@@ -410,10 +404,7 @@
                       about the price!
                     </p>
                   </div>
-                  <a href="#mariposaExpand" data-bs-toggle="collapse" id="mariposaLink" class="showMore">Show More</a>
-
-                  <!-- <button class="linkButtonLight" id="mariposabutton" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#mariposaExpand" aria-expanded="false" aria-controls="mariposa" class="showMore">Show More</button>             -->
+                  <a href="#mariposaExpand" data-bs-toggle="collapse" id="mariposaLink" class="showMore" onclick="toggleShowMore('mariposaLink')">Show More</a>
                 </div>
               </div>
             </div>
@@ -422,11 +413,11 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xxl-6">
-                    <img src="../images/gear_images/mariposa1.jpg" onclick="openDefaultModal();currentDefaultSlide(5)"
+                    <img src="../images/gear_images/mariposa1.jpg" onclick="openModal('default', 4)"
                       class="defaultImage gearThumbnail1 clickableImage" alt="Gossamer Gear Mariposa Backpack">
                   </div>
                   <div class="col-xxl-6">
-                    <img src="../images/gear_images/mariposa2.jpg" onclick="openDefaultModal();currentDefaultSlide(6)"
+                    <img src="../images/gear_images/mariposa2.jpg" onclick="openModal('default', 5)"
                       class="defaultImage gearThumbnail2 clickableImage" alt="Gossamer Gear Mariposa Backpack">
                   </div>
                 </div>
@@ -556,10 +547,8 @@
                       about the price!
                     </p>
                   </div>
-                  <a href="#mariposaExpand" data-bs-toggle="collapse" id="mariposaLink2" class="showMore">Show More</a>
+                  <a href="#mariposaExpand" data-bs-toggle="collapse" id="mariposaLink2" class="showMore" onclick="toggleShowMore('mariposaLink2')">Show More</a>
 
-                  <!-- <button class="linkButtonLight" id="mariposabutton" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#mariposaExpand" aria-expanded="false" aria-controls="mariposa" class="showMore">Show More</button>             -->
                 </div>
               </div>
             </div>
@@ -685,10 +674,7 @@
 
                       </p>
                     </div>
-                    <a href="#vnotchExpand" data-bs-toggle="collapse" id="vnotchLink" class="showMore">Show More</a>
-
-                    <!-- <button class="linkButtonLight" id="vnotchbutton" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#vnotchExpand" aria-expanded="false" aria-controls="vnotchExpand" class="showMore">Show More</button>             -->
+                    <a href="#vnotchExpand" data-bs-toggle="collapse" id="vnotchLink" class="showMore" onclick="toggleShowMore('vnotchLink')">Show More</a>
                   </div>
                 </div>
               </div>
@@ -697,11 +683,11 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-xxl-6">
-                      <img src="../images/gear_images/vnotch1.jpg" onclick="openDefaultModal();currentDefaultSlide(7)"
+                      <img src="../images/gear_images/vnotch1.jpg" onclick="openModal('default', 6)"
                         class="defaultImage gearThumbnail1 clickableImage" alt="Big Agnes VNotch UL 40 Sleeping Bag">
                     </div>
                     <div class="col-xxl-6">
-                      <img src="../images/gear_images/vnotch2.jpg" onclick="openDefaultModal();currentDefaultSlide(8)"
+                      <img src="../images/gear_images/vnotch2.jpg" onclick="openModal('default', 7)"
                         class="defaultImage gearThumbnail2 clickableImage"
                         alt="Big Agnes VNotch UL 40 Sleeping Bag in Stuff Sack">
                     </div>
@@ -816,10 +802,8 @@
                             be fine on this.
                           </p>
                         </div>
-                        <a href="#crashoutExpand" data-bs-toggle="collapse" id="crashoutLink" class="showMore">Show More</a>
+                        <a href="#crashoutExpand" data-bs-toggle="collapse" id="crashoutLink" class="showMore" onclick="toggleShowMore('crashoutLink')">Show More</a>
 
-                        <!-- <button class="linkButtonLight" id="crashoutbutton" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#crashoutExpand" aria-expanded="false" aria-controls="crashoutExpand" class="showMore">Show More</button>             -->
                       </div>
                     <!-- </div> -->
                   </div>
@@ -828,13 +812,13 @@
                       <div class="row">
                         <div class="col-xxl-6">
                           <img src="../images/gear_images/crashout1.jpg"
-                            onclick="openDefaultModal();currentDefaultSlide(9)"
+                            onclick="openModal('default', 8)"
                             class="defaultImage gearThumbnail1 clickableImage"
                             alt="Gram Counter Gear Crash Out Sleeping Mat">
                         </div>
                         <div class="col-xxl-6">
                           <img src="../images/gear_images/crashout2.jpg"
-                            onclick="openDefaultModal();currentDefaultSlide(10)"
+                            onclick="openModal('default', 9)"
                             class="defaultImage gearThumbnail2 clickableImage"
                             alt="Gram Counter Gear Crash Out Sleeping Mat in Stuff Sack">
                         </div>
@@ -939,10 +923,8 @@
                             be fine on this.
                           </p>
                         </div>
-                        <a href="#crashoutExpand" data-bs-toggle="collapse" id="crashoutLink2" class="showMore">Show More</a>
+                        <a href="#crashoutExpand" data-bs-toggle="collapse" id="crashoutLink2" class="showMore" onclick="toggleShowMore('crashoutLink2')">Show More</a>
 
-                        <!-- <button class="linkButtonLight" id="crashoutbutton" type="button" data-bs-toggle="collapse" 
-              data-bs-target="#crashoutExpand" aria-expanded="false" aria-controls="crashoutExpand" class="showMore">Show More</button>             -->
                       </div>
                     </div>
                   </div>
@@ -1008,10 +990,8 @@
                               that simple, I think.
                             </p>
                           </div>
-                          <a href="#polesExpand" data-bs-toggle="collapse" id="polesLink" class="showMore">Show More</a>
+                          <a href="#polesExpand" data-bs-toggle="collapse" id="polesLink" class="showMore" onclick="toggleShowMore('polesLink')">Show More</a>
 
-                          <!-- <button class="linkButtonLight" id="polesbutton" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#polesExpand" aria-expanded="false" aria-controls="polesExpand" class="showMore">Show More</button>             -->
                         </div>
                       </div>
                     </div>
@@ -1021,13 +1001,13 @@
                         <div class="row">
                           <div class="col-xxl-6">
                             <img src="../images/gear_images/poles1.jpg"
-                              onclick="openDefaultModal();currentDefaultSlide(11)"
+                              onclick="openModal('default', 10)"
                               class="defaultImage gearThumbnail1 clickableImage"
                               alt="Gram Counter Gear Fastpacker Trekking Poles Extended">
                           </div>
                           <div class="col-xxl-6">
                             <img src="../images/gear_images/poles2.jpg"
-                              onclick="openDefaultModal();currentDefaultSlide(12)"
+                              onclick="openModal('default', 11)"
                               class="defaultImage gearThumbnail2 clickableImage"
                               alt="Gram Counter Gear Fastpacker Trekking Poles Collapsed">
                           </div>

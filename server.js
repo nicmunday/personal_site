@@ -30,7 +30,7 @@ app.get("/webdev/anatomy", function(req, res) {
 app.get("/webdev/portfolio", function(req, res) {
     //res.send("<h1>Hello</h1>");
     //res.sendFile(__dirname + "/index.html");
-    res.render("webdev/portfolio.ejs", {pageName: "Web Design Portfolio"});
+    res.render("webdev/portfolio.ejs", {pageName: "My Portfolio"});
 
 });
 
@@ -44,7 +44,7 @@ app.get("/python", function(req, res) {
 app.get("/camping", function(req, res) {
     //res.send("<h1>Hello</h1>");
     //res.sendFile(__dirname + "/index.html");
-    res.render("camping.ejs", {pageName: "Camping And Hiking"});
+    res.render("camping/camping.ejs", {pageName: "Camping &amp; Hiking"});
 
 });
 app.get("/camping/gear", function(req, res) {
@@ -56,7 +56,7 @@ app.get("/camping/gear", function(req, res) {
 app.get("/camping/places", function(req, res) {
     //res.send("<h1>Hello</h1>");
     //res.sendFile(__dirname + "/index.html");
-    res.render("camping/places.ejs", {pageName: "My Favourite Places"});
+    res.render("camping/places.ejs", {pageName: "Favourite Places"});
 
 });
 

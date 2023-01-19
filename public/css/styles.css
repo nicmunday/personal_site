@@ -501,6 +501,7 @@ pre{
 }
 .contactIcon:hover{
   color: black;
+  cursor:pointer;
 }
 
 /* END CONTACT */

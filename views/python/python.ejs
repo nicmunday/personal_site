@@ -1,0 +1,375 @@
+<%- include("../subDirHeader") -%>
+
+
+  <div class="lightSection">
+    <div class="row">
+      <div class="col h1Container ">
+        <h1 class="otherH1s">
+          <%= pageName %>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="darkSection">
+    <div class="row">
+      <div class="col-12">
+        <span class="center">
+          <h5 class="pythonSectionHeading">Simple Scripts - Everyday Convenience</h5>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="lightSection">
+    <div class="row">
+      <div class="col-12">
+        <div class="sectionTextWrapper">
+          <div class="sectionTextLeft">
+
+
+            <p>About Simpler Scripts and other things and whatnotery and some stuff about some stuff and some other
+              stuff and maybe some of the things about the things which are in relation to the things.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="sectionTextWrapper">
+          <div class="sectionTextLeft">
+            <span class="center">
+              <h5 class="pythonH5">imt - IMDB Title Search</h5>
+            </span>
+
+            <p>
+              Just about the simplest script one could write, it takes a search term as arguments at runtime, puts
+              "+" between all words and then adds it into the URL for IMDB search, adding the &amp;s=tt to the end which
+              nakes it a search on titles. Run with, for example: <code>&nbsp;imt the matrix resurrections </code>.
+            </p>
+            <p>
+              Although incredibly simple, I find this saves a bit of time with each use and with frequent use that time
+              can amount to quite a lot. I have lots of versions of this script including for Amazon, twitter (to see
+              what people are saying about a specific topic), an IMDB version but with a name search and so on. It's
+              ultimately quicker than going to the browser, finding the bookmark link to the page, finding the search
+              bar once the page loads, clicking on it and then typing in the search. Not a lot quicker, but a bit.
+            </p>
+            <p>
+              Part of this is eyesight-related - it takes me time to find the mouse cursor, time to find where the
+              cursor
+              needs to go (bookmark icon, search bar) time to move it there with poor hand-eye coordination. But if none
+              of that were true, I think it would still be faster anyway, the command line is nearly alwasys faster!
+            </p>
+            <p>
+              The only time this isn't necessarily true is I have a version for google, and often it's just as quick if
+              I'm
+              already using Chrome to open a new tab and type the search in the already-in-focus address bar. I still
+              use
+              the script though because it's quicker if I'm already at the command line.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <pre><code><%- include("scripts/imt.py") -%> </code></pre>
+
+      </div>
+    </div>
+  </div>
+  <div class="darkSection">
+    <div class="row">
+      <div class="col-lg-6">
+        <pre><code><%- include("scripts/tesco.py") -%> </code></pre>
+      </div>
+      <div class="col-lg-6">
+        <div class="sectionTextWrapper">
+          <div class="sectionTextRight">
+            <span class="center">
+              <h5 class="pythonH5">Tesco</h5>
+            </span>
+
+            <p>
+              This is similar to the above script in that it takes multiple words as a single argument, joins them
+              together
+              into a single search term, appends them to a URL and then launches that URL in Google Chrome.
+            </p>
+            <p>
+              The difference here is that it does this multiple times in quick succession and that it's reading the
+              inputs
+              from file instead of as run time arguments.
+            </p>
+            <p>
+              So basically, I keep a shopping list throughout the week in a text file. Mostly it's the same and if I run
+              low on toothpaste or whatever then that's added to the list. Then come the day before a due delivery I run
+              this script and it searches the tesco website for everything I've put on my list. It's then a simple
+              matter
+              to Ctrl+Tab through each Chrome tab and click "add" on everything I want.
+            </p>
+            <p>
+              This saves me quite a lot of time every week and is a huge help. But as you can see from the code was very
+              simple to implement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lightSection">
+    <div class="row">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="sectionTextWrapper">
+            <div class="sectionTextLeft">
+              <span class="center">
+                <h5 class="pythonH5">LSTR4</h5>
+              </span>
+
+              <p>
+                I admit, when I first discovered the prettytable module I went a little prettytable-nuts. But this script 
+                is one that has survived the test of time and is still frequently used.
+              </p>
+              <p>
+                Prettytable basically just puts an ASCII table around some output printed at the command line. There are some
+                options such as whether each cell has lines or just the table has an outline and what form those lines take.
+                But as the name suggests, it's basically just some formatting.
+              </p>
+              <p>
+                I really like it though, I find it helps readability a lot in a lot of situations. In this one, it 
+                simply wraps a nice easy-to-read table around the 
+                output of <code>&nbsp;ls -tr </code>&nbsp; (on linux <code>&nbsp;ls </code>&nbsp; is list all files and directories,
+                 <code>&nbsp;-t </code>&nbsp; is sort by time (modification date) and <code>&nbsp;-r </code>&nbsp; is reverse order 
+                 i.e. most recent last - since most recent is what you're most likely looking for.)
+              </p>
+              <p>
+                So basically this extremely simple script runs a command on the local system (ls -tr in this case), 
+                captures the output, and then displays it in a way I find both appealing and easy to read.
+              </p>
+              <img src="../images/python_images/lstr4-screenshot.png" class="clickableImage pythonImage"
+                onclick="openModal('default', 1)" alt="LSTR4 screenshot -> ls -tr formatted in prettytable with Python">
+              <span class="center"><p class="thumbCaption">A screenshot of lstr4 (this script) Vs. the normal ls -tr</p></span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <pre><code><%- include("scripts/lstr4.py") -%></code></pre>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="darkSection">
+      <div class="row">
+        <div class="col-12">
+          <span class="center">
+            <h5 class="pythonSectionHeading">A Bit More - RSS & API calls</h5>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="lightSection">
+      <div class="row">
+        <div class="col-12">
+          <div class="sectionTextWrapper">
+            <div class="sectionTextLeft">
+
+
+              <p>About RSS and APIs and other things and whatnotery and some stuff about some stuff and some other
+                stuff and maybe some of the things about the things which are in relation to the things.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="sectionTextWrapper">
+            <div class="sectionTextLeft">
+              <span class="center">
+                <h5 class="pythonH5">Weather</h5>
+              </span>
+
+              <p>
+                About the script
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <pre class="firstPre"><code><%- include("scripts/weather/weather.py") -%></code></pre><br>
+          <pre class="secondPre"><code><%- include("scripts/weather/imports/threedayweather.py") -%></code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="darkSection">
+      <div class="row">
+        <div class="col-lg-6">
+          <pre class="firstPre"><code><%- include("scripts/news/news.py") -%></code></pre><br>
+          <pre class="secondPre"><code><%- include("scripts/news/imports/newsprocessor.py") -%></code></pre>
+        </div>
+        <div class="col-lg-6">
+          <div class="sectionTextWrapper">
+            <div class="sectionTextRight">
+              <span class="center">
+                <h5 class="pythonH5">News</h5>
+              </span>
+
+              <p>
+                About the script
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lightSection">
+      <div class="row">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="sectionTextWrapper">
+              <div class="sectionTextLeft">
+                <span class="center">
+                  <h5 class="pythonH5">Currency API</h5>
+                </span>
+
+                <p>
+                  About the script
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <pre><code> <%- include("scripts/weather/weather.py") -%> </code></pre>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="darkSection">
+        <div class="row">
+          <div class="col-12">
+            <span class="center">
+              <h5 class="pythonSectionHeading">Putting It All Together</h5>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="lightSection">
+        <div class="row">
+          <div class="col-12">
+            <div class="sectionTextWrapper">
+              <div class="sectionTextLeft">
+
+
+                <p>About the today script and other things and whatnotery and some stuff about some stuff and some other
+                  stuff and maybe some of the things about the things which are in relation to the things.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="sectionTextWrapper">
+              <div class="sectionTextLeft">
+                <span class="center">
+                  <h5 class="pythonH5">Today</h5>
+                </span>
+
+                <p>
+                  About the script
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <pre><code>something</code></pre>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="darkSection">
+        <div class="row">
+          <div class="col-12">
+            <span class="center">
+              <h5 class="pythonSectionHeading">GUI</h5>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="lightSection">
+        <div class="row">
+          <div class="col-12">
+            <div class="sectionTextWrapper">
+              <div class="sectionTextLeft">
+
+
+                <p>About the news gui program and other things and whatnotery and some stuff about some stuff and some
+                  other
+                  stuff and maybe some of the things about the things which are in relation to the things.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="sectionTextWrapper">
+              <div class="sectionTextLeft">
+                <span class="center">
+                  <h5 class="pythonH5">GUI News</h5>
+                </span>
+
+                <p>
+                  About the script
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <pre><code>something</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="defaultModal" class="modal">
+        <span class="close cursor" onclick="closeModal('default')">&times;</span>
+        <div class="modal-content">
+          <div class="defaultSlides">
+            <img src="../images/python_images/lstr4-screenshot.png" style="width:100%">
+          </div>
+          <div class="caption-container">
+            <p id="defaultCaption"></p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <%- include("../footer") -%>

@@ -116,7 +116,7 @@
     .showMore{
         font-size: 2.3rem;
     }
-    .anatomyCodeLeft, .anatomyCodeRight{
+    .codeContainer{
       width: 80%;
       margin: 10% 2% 5% 3%;
       /* font-size: 3rem; */

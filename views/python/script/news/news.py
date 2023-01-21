@@ -85,4 +85,4 @@ else:
 
 with open("/home/nic/bin/imports/"
           "text_files/newsaccessed.txt", "w") as writer:
-    writer.write(str(datetime.datetime.now()))
+    writer.write(str(my_news.now))

@@ -9,12 +9,12 @@ class NewsProcessor:
             "http://feeds.bbci.co.uk/news/rss.xml")
         self.stories = self.feed.entries
 
-        now = datetime.now()
+        self.now = datetime.now()
 
         self.today = datetime.combine(date.today(),
                                       datetime.min.time())
 
-        now_str = now.\
+        now_str = self.now.\
             strftime("Now: %a %d %b %H:%M  |||  Pub: ")
         
         self.final_string = now_str + datetime.\

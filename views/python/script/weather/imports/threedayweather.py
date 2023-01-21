@@ -35,7 +35,10 @@ class ThreeDayWeather:
         summary_list = feed_summary.split(",")
 
         description_list = title_list[0].split(":")
-        weather_data = {"day": description_list[0].strip(), "description": description_list[1].strip(), "max": "", "min": "", "wind": "", "sunrise": "", "sunset": ""}
+        weather_data = {"day": description_list[0].strip(),
+                        "description": description_list[1].strip(),
+                        "max": "", "min": "", "wind": "", "sunrise":
+                            "", "sunset": ""}
 
         for item in summary_list:
             item_split = item.split()
@@ -54,16 +57,19 @@ class ThreeDayWeather:
         return weather_data
 
     def today(self):
-        today_weather = self.convert_feed_to_data(self.three_day_feed.entries[0])
+        today_weather = self.convert_feed_to_data(
+            self.three_day_feed.entries[0])
         return today_weather
 
 
     def tomorrow(self):
-        tomorrow_weather = self.convert_feed_to_data(self.three_day_feed.entries[1])
+        tomorrow_weather = self.convert_feed_to_data(
+            self.three_day_feed.entries[1])
         return tomorrow_weather
 
 
     def day_after_tomorrow(self):
-        day_after_tomorrow_weather = self.convert_feed_to_data(self.three_day_feed.entries[2])
+        day_after_tomorrow_weather = self.convert_feed_to_data(
+            self.three_day_feed.entries[2])
         return day_after_tomorrow_weather
 

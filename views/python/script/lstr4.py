@@ -12,19 +12,24 @@ for item in resultList:
     if item != "":
         dirlist.append(item)
 
-table = prettytable.PrettyTable()
+if len(dirlist) == 0:
+    print("\n                   "
+          "No Items In Directory                 \n")
 
-rows = ceil(len(dirlist)/4)
-table.add_column("1", dirlist[:rows])
-table.add_column("2", dirlist[rows:(rows*2)])
-table.add_column("3", dirlist[(rows*2):(rows*3)])
-finalcol = dirlist[rows*3:]
-while rows - len(finalcol) > 0:
-    finalcol.append("")
-table.add_column("4", finalcol)
+else:
+    table = prettytable.PrettyTable()
 
+    rows = ceil(len(dirlist)/4)
+    table.add_column("1", dirlist[:rows])
+    table.add_column("2", dirlist[rows:(rows*2)])
+    table.add_column("3", dirlist[(rows*2):(rows*3)])
+    finalcol = dirlist[rows*3:]
+    while rows - len(finalcol) > 0:
+        finalcol.append("")
+    table.add_column("4", finalcol)
+    
 
-table.header=False
-table.hrules=prettytable.ALL
-table.set_style(prettytable.SINGLE_BORDER)
-print(table)
+    table.header=False
+    table.hrules=prettytable.ALL
+    table.set_style(prettytable.SINGLE_BORDER)
+    print(table)

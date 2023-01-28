@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 import subprocess
+import pathlib
+import webbrowser
 
-with open("/home/nic/bin/imports/text_files/shopping.txt") as reader:
-    for  line in reader:
-        if line.strip() != "":
-            search_term = "+".join(line.split())
-            subprocess.run([
-                "google-chrome",
-                f"http://www.tesco.com/groceries/"
-                f"Product/Search/Default.aspx?"
-                f"searchBox={search_term}"
-            ])
-            print(search_term)
+current_path = pathlib.Path(__file__).parent
+shopping_file = current_path.joinpath("imports",
+                                       "text_files",
+                                       "shopping.txt")
+
+tesco_url = "http://www.tesco.com/" \
+            "groceries/Product/Search/" \
+            "Default.aspx?searchBox="
+
+[webbrowser.open_new_tab(tesco_url + '+'.join(line.split()))
+ for line in shopping_file.read_text().splitlines()]

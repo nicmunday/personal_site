@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <textarea class="anatomyCodeContainer" rows="13"><%- include("../../server.js") -%></textarea>
+        <pre class="anatomyPre"><code><%- include("../../server.js") -%></code></pre>
 
       </div>
     </div>
@@ -72,8 +72,8 @@
         </div>
       </div>
       <div class="col-lg-6 ">
-        <textarea class="anatomyCodeContainer" rows="13">
-          <%- include("../camping/carouselBig.ejs") -%></textarea>
+        <pre class="anatomyPre"><code>
+          <%- include("anatomy-carousel") -%></code></pre>
       </div>
       <div class="col-lg-6 hideAtSmall">
         <div class="row">
@@ -131,8 +131,8 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <textarea class="anatomyCodeContainer" rows="13">
-       <%- include("../../public/js/modal.js") -%></textarea>
+        <pre class="anatomyPre"><code> <%- include("../../public/js/modal.js") -%> </code></pre>
+       
       </div>
     </div>
   </div>
@@ -182,8 +182,7 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <textarea class="anatomyCodeContainer" rows="13">
-        <%- include("../camping/swanageGallery") -%></textarea>
+        <pre class="anatomyPre"><code> <%- include("anatomy-swan-gal") -%> </code></pre>
 
       </div>
       <div class="col-lg-6 hideAtSmall">
@@ -260,8 +259,8 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <textarea class="anatomyCodeContainer" rows="13">
-          <%- include("../../public/css/media_queries.css") -%></textarea>
+        <pre class="anatomyPre"><code>
+          <%- include("../../public/css/media_queries.css") -%></code></pre>
       </div>
     </div>
   </div>
@@ -309,15 +308,7 @@
         </div>
       </div>
       <div class="col-lg-6 ">
-        <textarea class="anatomyCodeContainer" rows="10">$("#minipeakbutton").on("click", function(){
-        if ($("#minipeakbutton").text() == "Show More"){
-          $("#minipeakbutton").text("Show Less");
-        }
-          else{
-          $("#minipeakbutton").text("Show More");
-          }
-        
-      });</textarea>
+        <pre class="anatomyPre shortPre"><code>$ <%- include("../../public/js/main.js") -%> </code></pre>
       </div>
       <div class="col-lg-6 hideAtSmall">
         <div class="sectionTextContainer">

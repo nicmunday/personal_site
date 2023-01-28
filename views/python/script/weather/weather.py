@@ -1,15 +1,8 @@
-#!//usr/bin/env python3
-import datetime
+#!/usr/bin/env python3
+import sys
+import prettytable
 from imports import latest_weather
 from imports import threedayweather
-import prettytable
-import subprocess
-
-
-weather = threedayweather.ThreeDayWeather()
-today = weather.today()
-tomorrow = weather.tomorrow()
-day_after = weather.day_after_tomorrow()
 
 table = prettytable.PrettyTable()
 table.header = False
@@ -17,41 +10,59 @@ table.hrules = prettytable.FRAME
 table.vrules = prettytable.FRAME
 table.set_style(prettytable.DOUBLE_BORDER)
 
+def add_row(day):
+
+    table.add_row([day["day"],
+                   day["description"]])
+    table.add_row([f"{day['max']} {day['min']}",
+                   day["wind"]])
+    table.add_row([day["sunrise"],
+                   day["sunset"]])
+    table.add_row(["", ""])
+
+def add_col(day):
+    table.add_column("",[day["day"],
+                         "",
+                         day["description"],
+                         day["max"],
+                         day["min"],
+                         day["wind"],
+                         day["sunrise"],
+                         day["sunset"],
+                         ""])
+
+
 latest = latest_weather.LatestWeather()
+weather = threedayweather.ThreeDayWeather()
 
-table.add_row([f"{latest.day} {latest.time}",
-               f"{latest.conditions} {latest.temp}"])
+days = [
+    weather.today(),
+    weather.tomorrow(),
+    weather.day_after_tomorrow()
+]
 
-table.add_row(["",""])
+if "-v" in sys.argv:
+    table.add_row([f"{latest.day} {latest.time}",
+                   f"{latest.conditions} {latest.temp}"])
+    table.add_row(["",""])
 
-table.add_row([today["day"], today["description"]])
+    [add_row(day) for day in days]
+    table.add_row([weather.now, weather.published])
 
-table.add_row([f"{today['max']} "
-               f"{today['min']}", today["wind"]])
+else:
+    [add_col(day) for day in days]
+    table.add_column("",[
+        "Latest",
+        "",
+        "",
+        latest.time,
+        latest.conditions,
+        latest.temp,
+        "",
+        "",
+        ""
+    ])
 
-table.add_row([today["sunrise"], today["sunset"]])
-
-table.add_row(["",""])
-
-table.add_row([tomorrow["day"], tomorrow["description"]])
-
-table.add_row([f"{tomorrow['max']} {tomorrow['min']}",
-               today["wind"]])
-
-table.add_row([tomorrow["sunrise"], tomorrow["sunset"]])
-
-
-table.add_row(["",""])
-table.add_row([day_after["day"], day_after["description"]])
-
-table.add_row([f"{day_after['max']} {day_after['min']}",
-               today["wind"]])
-
-table.add_row([day_after["sunrise"], day_after["sunset"]])
-
-table.add_row(["",""])
-
-now = "Now: " + datetime.datetime.now().strftime("%H:%M")
-table.add_row([now, weather.published])
+    table.add_row(["","",weather.now, weather.published])
 
 print(table)

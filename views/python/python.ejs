@@ -10,11 +10,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
   <div class="darkSection">
     <div class="row">
       <div class="col-12">
@@ -29,12 +24,19 @@
       <div class="col-12">
         <div class="sectionTextWrapper">
           <div class="sectionTextLeft">
-
-
-            <p>About Simpler Scripts and other things and whatnotery and some stuff about some stuff and some other
-              stuff and maybe some of the things about the things which are in relation to the things.
+            <p>
+              I have 79 files and directories in my ~/bin directory (where you put scripts on Linux). The reason that I
+              know
+              that is that one of them is a script that when run tells you the number of items in the current directory.
+              It has 10 lines in it, 6 of which are actual code.
             </p>
-
+            <p>
+              This is what I love about Python. You can automate almost everything. Most tiny little things you do over
+              and
+              over again can be put in a script that saves you a tiny bit of time and efffort every time you run it.
+              This
+              section is about those scripts.
+            </p>
           </div>
         </div>
       </div>
@@ -46,7 +48,6 @@
             <span class="center">
               <h5 class="pythonH5">imt - IMDB Title Search</h5>
             </span>
-
             <p>
               Just about the simplest script one could write, it takes a search term as arguments at runtime, puts
               "+" between all words and then adds it into the URL for IMDB search, adding the &amp;s=tt to the end which
@@ -77,15 +78,22 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <pre><code><%- include("script/imt.py") -%> </code></pre>
-
+        <div class="spacer hideAtSmall"></div>
+        <pre class="shortPre"><code><%- include("script/imt.py") -%> </code></pre>
+        <p class="thumbCaption">imt.py - IMDB Title Search</p>
       </div>
     </div>
   </div>
   <div class="darkSection">
     <div class="row">
-      <div class="col-lg-6">
-        <pre><code><%- include("script/tesco.py") -%> </code></pre>
+      <div class="col">
+        <span class="backToTopDark"><a href="#home">
+            <p>BACK TO TOP</p>
+          </a></span>
+      </div>
+      <div class="col-lg-6 hideAtSmall">
+        <pre class="shortPre"><code><%- include("script/tesco.py") -%> </code></pre>
+        <p class="thumbCaption">tesco.py - Get Shopping From List And Search Tesco For Each Item</p>
       </div>
       <div class="col-lg-6">
         <div class="sectionTextWrapper">
@@ -118,10 +126,19 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-6 hideAtBig">
+        <pre class="shortPre"><code><%- include("script/tesco.py") -%> </code></pre>
+        <p class="thumbCaption">tesco.py - Get Shopping From List And Search Tesco For Each Item</p>
+      </div>
     </div>
   </div>
   <div class="lightSection">
     <div class="row">
+      <div class="col">
+        <span class="backToTopLight"><a href="#home">
+            <p>BACK TO TOP</p>
+          </a></span>
+      </div>
       <div class="row">
         <div class="col-lg-6">
           <div class="sectionTextWrapper">
@@ -129,45 +146,46 @@
               <span class="center">
                 <h5 class="pythonH5">LSTR4</h5>
               </span>
-
               <p>
-                I admit, when I first discovered the prettytable module I went a little prettytable-nuts. But this script 
+                I admit, when I first discovered the prettytable module I went a little prettytable-nuts. But this
+                script
                 is one that has survived the test of time and is still frequently used.
               </p>
               <p>
-                Prettytable basically just puts an ASCII table around some output printed at the command line. There are some
-                options such as whether each cell has lines or just the table has an outline and what form those lines take.
+                Prettytable basically just puts an ASCII table around some output printed at the command line. There are
+                some
+                options such as whether each cell has lines or just the table has an outline and what form those lines
+                take.
                 But as the name suggests, it's basically just some formatting.
               </p>
               <p>
-                I really like it though, I find it helps readability a lot in a lot of situations. In this one, it 
-                simply wraps a nice easy-to-read table around the 
-                output of <code>&nbsp;ls -tr </code>&nbsp; (on linux <code>&nbsp;ls </code>&nbsp; is list all files and directories,
-                 <code>&nbsp;-t </code>&nbsp; is sort by time (modification date) and <code>&nbsp;-r </code>&nbsp; is reverse order 
-                 i.e. most recent last - since most recent is what you're most likely looking for.)
+                I really like it though, I find it helps readability a lot in a lot of situations. In this one, it
+                simply wraps a nice easy-to-read table around the
+                output of <code>&nbsp;ls -tr </code>&nbsp; (on linux <code>&nbsp;ls </code>&nbsp; is list all files and
+                directories,
+                <code>&nbsp;-t </code>&nbsp; is sort by time (modification date) and <code>&nbsp;-r </code>&nbsp; is
+                reverse order
+                i.e. most recent last - since most recent is what you're most likely looking for.)
               </p>
               <p>
-                So basically this extremely simple script runs a command on the local system (ls -tr in this case), 
+                So basically this extremely simple script runs a command on the local system (ls -tr in this case),
                 captures the output, and then displays it in a way I find both appealing and easy to read.
               </p>
-              <img src="../images/python_images/lstr4-screenshot.png" class="clickableImage pythonImage"
-                onclick="openModal('default', 1)" alt="LSTR4 screenshot -> ls -tr formatted in prettytable with Python">
-              <span class="center"><p class="thumbCaption">A screenshot of lstr4 (this script) Vs. the normal ls -tr</p></span>
-
             </div>
           </div>
+          <img src="../images/python_images/lstr4-screenshot.png" class="clickableImage pythonImage"
+            onclick="openModal('default', 0)" alt="LSTR4 screenshot -> ls -tr formatted in prettytable with Python">
+          <span class="center">
+            <p class="thumbCaption">Screenshot of lstr4 (this script) Vs. the normal ls -tr</p>
+          </span>
         </div>
         <div class="col-lg-6">
-          <pre><code><%- include("script/lstr4.py") -%></code></pre>
+          <pre class="withImagePre"><code><%- include("script/lstr4.py") -%></code></pre>
+          <p class="thumbCaption">lstr4 - Linux command "ls -tr" Wrapped In Python prettytable Module For Reading Ease
+          </p>
         </div>
       </div>
     </div>
-
-
-
-
-
-
     <div class="darkSection">
       <div class="row">
         <div class="col-12">
@@ -178,16 +196,36 @@
       </div>
     </div>
     <div class="lightSection">
+      <div class="col">
+        <span class="backToTopLight"><a href="#home">
+            <p>BACK TO TOP</p>
+          </a></span>
+      </div>
       <div class="row">
         <div class="col-12">
           <div class="sectionTextWrapper">
             <div class="sectionTextLeft">
-
-
-              <p>About RSS and APIs and other things and whatnotery and some stuff about some stuff and some other
-                stuff and maybe some of the things about the things which are in relation to the things.
+              <p>
+                This section gets a bit more involved. For starters, there are classes and objects and modules written
+                and then imported elsewhere. And there are RSS and API calls to get up-to-date information.
               </p>
-
+              <p>
+                There are two main reasons to do scripts like this - it's quicker than navigating to a specific webpage
+                and doing it there, or you want to change the format of the information (in my case usually to
+                make it easier to read according to my preferences)
+              </p>
+              <p>
+                It should be noted that while most programmers will go straight for an API, I like to see what RSS feeds
+                are available on a subject - they're usually more limited in a 'you get what you're given' kind of way,
+                and to be honest that's a selling point sometimes. Yes I could get two weeks of weather including the
+                barometric pressure and humidity from openweather, but most of the time I just want the temperature for
+                today and tomorrow and to know whether I need a raincoat.
+              </p>
+              <p class="bold">
+                The code for the weather and news scripts can be found on
+                <a href="https://www.github.com/nicmunday/">My Github Account</a>, along with the entirety of this
+                website.
+              </p>
             </div>
           </div>
         </div>
@@ -199,24 +237,69 @@
               <span class="center">
                 <h5 class="pythonH5">Weather</h5>
               </span>
-
               <p>
-                About the script
+                This is basically the bare bones of a weather forecast for whatever is left of the current day, the next
+                day,
+                and the day after that, all organised and printed out in an easy-to-glance-at way that pleases me.
+              </p>
+              <p>
+                You can have it going across the page or down with the "-v" (vertical) flag at runtime - the default is
+                to
+                go across the page. You can look at the screenshot to see the difference.
+              </p>
+              The data comes from the BBC Weather RSS feed, and it's like I said in the heading of the section - yes I
+              could
+              get way more information from an API like openweather or Yahoo Weather, but this is the information that I
+              would likely pull out of that and so all the other information would then go to waste, making this a lot
+              more
+              sensible a choice.
+              <p>
+                ThreeDayWeather is the module that handles the feed - a constructor gets the feed and breaks down any
+                date
+                related things (published date, current), there's a method to take a feed and break it down into usable
+                data
+                (min, max, wind speed, etc) and then there are three methods which pass each of the days in the feed to
+                the
+                previous method for processing.
+              </p>
+              <p>
+                The weather script then takes this data, one day at a time, and wraps a prettytable construction around
+                it
+                and prints it out in an easy-to-read format that I enjoy. Simple!
               </p>
             </div>
           </div>
+          <img src="../images/python_images/weather-screenshot.png" class="clickableImage pythonImage"
+            onclick="openModal('default', 1)" alt="weather screenshot -> BBC Weather RSS Feed in two different forms">
+          <span class="center">
+            <p class="thumbCaption">Screenshot of weather.py run normally and with "-v" (vertical) option</p>
+          </span>
         </div>
         <div class="col-lg-6">
-          <pre class="firstPre"><code><%- include("script/weather/weather.py") -%></code></pre><br>
-          <pre class="secondPre"><code><%- include("script/weather/imports/threedayweather.py") -%></code></pre>
+          <pre class="firstPre"><code><%- include("script/weather/imports/threedayweather.py") -%></code></pre>
+          <p class="thumbCaption">threedayweather.py - Breaks BBC Weather 3Day RSS Feed Into Usable Components</p>
+          <pre class="secondPre"><code><%- include("script/weather/weather.py") -%></code></pre>
+          <p class="thumbCaption">weather.py - Outputs ThreeDayWeather Data Readable &amp; Useful Format</p>
         </div>
       </div>
     </div>
     <div class="darkSection">
       <div class="row">
-        <div class="col-lg-6">
-          <pre class="firstPre"><code><%- include("script/news/news.py") -%></code></pre><br>
-          <pre class="secondPre"><code><%- include("script/news/imports/newsprocessor.py") -%></code></pre>
+        <div class="col">
+          <span class="backToTopDark"><a href="#home">
+              <p>BACK TO TOP</p>
+            </a></span>
+        </div>
+        <div class="col-lg-6 hideAtSmall">
+          <pre class="firstPre"><code><%- include("script/news/imports/newsprocessor.py") -%></code></pre>
+          <p class="thumbCaption">newsprocessor.py - Breaks BBC News RSS Feed Into usable Parts</p>
+          <pre class="firstPre"><code><%- include("script/news/news.py") -%></code></pre>
+          <p class="thumbCaption">news.py - Requests Set Of Stories From NewsProcessor &amp; Displays</p>
+          <img src="../images/python_images/news-l-screenshot.png" class="clickableImage pythonImage"
+            onclick="openModal('default', 2)" alt="News screenshot -> ls -tr formatted in prettytable with Python">
+          <span class="center">
+            <p class="thumbCaption">Screenshot of my news sscript</p>
+          </span>
         </div>
         <div class="col-lg-6">
           <div class="sectionTextWrapper">
@@ -224,17 +307,85 @@
               <span class="center">
                 <h5 class="pythonH5">News</h5>
               </span>
-
               <p>
-                About the script
+                This is not dissimilar to the weather script. You have the newsprocessor module that does all the heavy
+                lifting of getting the feed and breaking it down into the usable data, and you have the news.py script
+                that takes this data and puts it on the screen.
+              </p>
+              <p>
+                I made this because I much prefer to read on the terminal with contrast and colours that I've set up
+                and I don't need pictures with my news and also for a lot of stories, let's be honest, I don't need
+                more than the headline. So this is the perfect solution, really. All the news I would get at
+                bbc.co.uk/news, in a much more user-friendly (at least to me) format.
+              </p>
+              <p>
+                The differences between this and weather are that while with weather you could include "-v" to change
+                the
+                direction of display, this has quite a few options.
+              </p>
+              <p>
+                Firstly a news story has three parts - the headline, a summary (usually a single sentence),
+                and
+                a link to the full story on the website. The "-s" option will display headlines and summaries, the "-l"
+                headlines and links and "-s -l" will display all three. This doesn't change which stories you see,
+                just how you see them.
+              </p>
+              <p>
+                But there are ways to also change which stories you see. First are the "-t" and "-nt" options. You, for
+                reasons
+                that will become clear, can't use these together. They stand for 'today' and 'not today', which is to
+                say
+                the feed sometimes has older stories - sometimes from yesterday but they're still in the news, sometimes
+                it'll be a feature like "how to stay warm in a cold snap" that they recycle a few times. So you might
+                want to see the whole feed or you might want to see just the new stories from today, or the opposite.
+              </p>
+              <p>
+                And then there's user-specific time. Every time you run the program, it puts a timestamp in a text file.
+                If you use the "-n" option, only stories published after this timestamp - i.e. since you last checked
+                the
+                feed - will be published.
+              </p>
+              <p>
+                And finally when all the flags are taken care of you have the option of including one or two integers as
+                parameters. These are story numbers - each story has a number printed out with it, its place in the
+                feed,
+                and these display those stories. If you include one number, you will get that many stories - run "news
+                10"
+                and you will get stories 1 to 10. Use two numbers and it's a range - "news 10 12" will get you stories
+                10,
+                11
+                and 12.
+              </p>
+              <p>
+                The main idea behind this is that first you might run the script with no flags and scan through the
+                headlines, but then you might decide you want to read the full versions of a few of the stories,
+                so you run "news -l 13-20" or whatever range has those stories in (or run it multiple times for
+                just the stories you want i.e. "news -l 13 13" will just get you story 13), so you can focus
+                in on the stories you're interested in with different display options.
               </p>
             </div>
           </div>
+        </div>
+        <div class="col-lg-6 hideAtBig">
+          <pre class="firstPre"><code><%- include("script/news/imports/newsprocessor.py") -%></code></pre>
+          <p class="thumbCaption">newsprocessor.py - Breaks BBC News RSS Feed Into usable Parts</p>
+          <pre class="firstPre"><code><%- include("script/news/news.py") -%></code></pre>
+          <p class="thumbCaption">news.py - Requests Set Of Stories From NewsProcessor &amp; Displays</p>
+          <img src="../images/python_images/news-l-screenshot.png" class="clickableImage pythonImage"
+            onclick="openModal('default', 2)" alt="News screenshot -> ls -tr formatted in prettytable with Python">
+          <span class="center">
+            <p class="thumbCaption">Screenshot of my news sscript</p>
+          </span>
         </div>
       </div>
     </div>
     <div class="lightSection">
       <div class="row">
+        <div class="col">
+          <span class="backToTopLight"><a href="#home">
+              <p>BACK TO TOP</p>
+            </a></span>
+        </div>
         <div class="row">
           <div class="col-lg-6">
             <div class="sectionTextWrapper">
@@ -242,28 +393,39 @@
                 <span class="center">
                   <h5 class="pythonH5">Currency API</h5>
                 </span>
-
                 <p>
-                  About the script
+                  This is a script I wrote basically just to demonstrate a little API usage for this site since I'd
+                  tended
+                  more towards RSS feeds. It actually replaced functionality I had from an RSS feed and is probably
+                  and improvement.
                 </p>
-
+                <p>
+                  Previously I had two scripts gbpToUsd and usdToGbp and you just typed the script name and an amount
+                  and got the result, which was quick and perfectly functional.
+                </p>
+                <p>
+                  This is a little less quick, a bit more complicated, but more functional. I've tried to make it as
+                  natural to use as possible - you can either run it with zero arguments and answer the questions
+                  ("what currency do you want to convert?" and so on) or you can run <code>currency to usd 10</code>
+                  and get the conversion of 10 British Pounds to US dollars (all conversions are from/to GBP).
+                  <code>currency from usd 10</code> would convert in the other direction - from USD to GBP. So it
+                  hopefully makes a kind of natural-language sense - you convert to the currency you're entering or
+                  from it.
+                </p>
+                <p>
+                  The script currently supports converting euros (EUR) and US dollars (USD) to British Pounds (GBP),
+                  because that is all I am ever likely to use, but it could be easily expanded to cover any currency
+                  the API supports.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <pre><code> <%- include("script/weather/weather.py") -%> </code></pre>
+            <pre><code> <%- include("script/currency/currency.py") -%> </code></pre>
+            <p class="thumbCaption">currency.py - Get Exchange Rate From API &amp; Perform Exchange Calculation</p>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
       <div class="darkSection">
         <div class="row">
           <div class="col-12">
@@ -275,44 +437,98 @@
       </div>
       <div class="lightSection">
         <div class="row">
-          <div class="col-12">
-            <div class="sectionTextWrapper">
-              <div class="sectionTextLeft">
-
-
-                <p>About the today script and other things and whatnotery and some stuff about some stuff and some other
-                  stuff and maybe some of the things about the things which are in relation to the things.
-                </p>
-
-              </div>
-            </div>
+          <div class="col">
+            <span class="backToTopLight"><a href="#home">
+                <p>BACK TO TOP</p>
+              </a></span>
           </div>
-        </div>
-        <div class="row">
           <div class="col-lg-6">
             <div class="sectionTextWrapper">
               <div class="sectionTextLeft">
                 <span class="center">
                   <h5 class="pythonH5">Today</h5>
                 </span>
-
                 <p>
-                  About the script
+                  This is a script I use every day (as the name implies.) It's not a <em>lot</em> more complicated than
+                  the previous section, there's just more of it - in fact it includes both the weather and news scripts,
+                  but a lot more besides.
                 </p>
+                <p>
+                  But it's along the same lines. It's basically all the information I might want for the day in one
+                  place.
+                  So the weather, how many new news stories there are since I last read the news, multiple types of
+                  reminders (ones I set in a reminders.txt text file, urgent ones from a different file that get
+                  highlighted, plus ones pulled from my calendar or the day - it tells me when it's bin day tomorrow
+                  and which bin it is (who sometimes forgets that? Be honest.) and it tells me when it's been 12 days
+                  or longer since I charged my smartwatch (which usually lasts 14)).
+                </p>
+                <p>
+                  It has any events from my google calendar with a date in the next ten days as well as from my
+                  family's shared calendar, it tells me what the tides are doing near me from the tidetimes.org RSS
+                  feed since ocassionally I like to get on a train and go to the beach for a long walk. And it has
+                  the RSS feed or my personal myspisodes.com account so I can see what's on TV today and tomorrow or
+                  what was on yesterday that I might need to watch.
+                </p>
+                <p>
+                  And also, because why not, it has the current moon phase which it calculates itself from a Python
+                  module called Skyfield (and which I'll admit I have no real clue how to use even though I figured
+                  out how to get that much information out of it). Also note the first time you run this the moon
+                  calculation
+                  takes ages, but it saves a file that lets it run a lot quicker the next time.
+                </p>
+                <p class="bold">
+                  The code for this script along with all its dependencies can be found on
+                  <a href="https://www.github.com/nicmunday/">My Github Account</a>, along with the entirety of this
+                  website.
+                </p>
+                <div class="spacer">
+                </div>
+                <p>
+                  Notes If you wanted to run this:
+                </p>
+                <ul>
+                  <li>
+                    Getting the calendar to work is quite involved. You need a google authorization token (a
+                    credentials.json) which you have to get from Google. You can run the script with the "-c"
+                    option to disable the calendar functionality, though.
+                  </li>
+                  <li>
+                    You need your own myepisodes account for that to work. You store the username and API token in
+                    imports/json/my_episodes_user-data.json.
+                  </li>
+                  <li>
+                    The calendar (as in the two months in the top right) is made using the linux "cal" command.
+                    I don't know what happens if you try to run this script on Windows with that in there, but I
+                    wouldn't think anything good.
+                  </li>
+                  <li>
+                    You can change the location of both the tides and the weather in the file
+                    imports/json/locations,json. They come pre-set to Essex.
+                  </li>
+                  <li>
+                    You need to set the locations of a whole bunch of text files that the script reads from and writes
+                    to
+                    in imports/json/today_settings.json.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <pre><code>something</code></pre>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <pre class="firstPre"><code> <%- include("script/today/today.py") -%> </code></pre>
+            <p class="thumbCaption">today.py - Get Data From Variety Of Sources, Display In Readable/Useful Format</p>
+            <div class="spacer"></div>
+            <img src="../images/python_images/today-screenshot.png" class="clickableImage pythonImage"
+              onclick="openModal('default', 3)" alt="Today screenshot">
+            <span class="center">
+              <p class="thumbCaption">Screenshot of today (this script)</p>
+            </span>
           </div>
         </div>
       </div>
-
-
-
-
-
-
       <div class="darkSection">
         <div class="row">
           <div class="col-12">
@@ -324,45 +540,93 @@
       </div>
       <div class="lightSection">
         <div class="row">
-          <div class="col-12">
-            <div class="sectionTextWrapper">
-              <div class="sectionTextLeft">
-
-
-                <p>About the news gui program and other things and whatnotery and some stuff about some stuff and some
-                  other
-                  stuff and maybe some of the things about the things which are in relation to the things.
-                </p>
-
-              </div>
-            </div>
+          <div class="col">
+            <span class="backToTopLight"><a href="#home">
+                <p>BACK TO TOP</p>
+              </a></span>
           </div>
-        </div>
-        <div class="row">
           <div class="col-lg-6">
             <div class="sectionTextWrapper">
               <div class="sectionTextLeft">
                 <span class="center">
                   <h5 class="pythonH5">GUI News</h5>
                 </span>
-
                 <p>
-                  About the script
+                  I originally wrote this just so I'd have a GUI program to put here and now I love it!
+                </p>
+                <p>
+                  I didn't think I'd have much use for GUI programs for my own personal use, which is why everything
+                  else
+                  is a CL script - I just find the command line faster most of the time. But given that the news command
+                  line script has more potential options than the ultra-comprehensive today script, it is actually a
+                  very
+                  sensible choice for a graphical program.
+                </p>
+                <p>
+                  All the options such as whether to display links/summaries/publish dates are now check boxes, as is
+                  whether
+                  you want new stories or not, and then you use radio buttons to decide between all stories, today
+                  stories
+                  and not-today stories.
+                </p>
+                <p>
+                  Clicking boxes for those options (and in fact the default ones are the ones I use almost always) is a
+                  lot
+                  simpler than writing out command line options, plus the use of different colours makes it a lot easier
+                  to read for me, and on top of that you can scroll with both the mouse and keyboard where in the
+                  command line
+                  only the mouse was possible.
+                </p>
+                <p>
+                  All in all, a success I am very happy with both functionally and aesthetically! (Can you tell that I
+                  have
+                  a fairly specific colour preference?)
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <pre><code>something</code></pre>
+            <pre><code> <%- include("script/news-gui/news-gui.py") -%> </code></pre>
+            <p class="thumbCaption">news-gui.py - The Graphical Version Of The News Script Above</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="../images/python_images/news-gui-screenshot.png" class="clickableImage pythonImage"
+              onclick="openModal('default', 5)" alt="News GUI screenshot">
+            <span class="center">
+              <p class="thumbCaption">Screenshot Of News GUI Program With No Options Selected (Just The Headlines)</p>
+            </span>
+          </div>
+          <div class="col-lg-6">
+            <img src="../images/python_images/news-gui-l-s-screenshot.png" class="clickableImage pythonImage"
+              onclick="openModal('default', 4)" alt="News GUI screenshot">
+            <span class="center">
+              <p class="thumbCaption">Screenshot of News Gui Program - links, dates, summaries options selected</p>
+            </span>
           </div>
         </div>
       </div>
-
       <div id="defaultModal" class="modal">
         <span class="close cursor" onclick="closeModal('default')">&times;</span>
         <div class="modal-content">
           <div class="defaultSlides">
             <img src="../images/python_images/lstr4-screenshot.png" style="width:100%">
+          </div>
+          <div class="defaultSlides">
+            <img src="../images/python_images/weather-screenshot.png" style="width:100%">
+          </div>
+          <div class="defaultSlides">
+            <img src="../images/python_images/news-l-screenshot.png" style="width:100%">
+          </div>
+          <div class="defaultSlides">
+            <img src="../images/python_images/today-screenshot.png" style="width:100%">
+          </div>
+          <div class="defaultSlides">
+            <img src="../images/python_images/news-gui-l-s-screenshot.png" style="width:100%">
+          </div>
+          <div class="defaultSlides">
+            <img src="../images/python_images/news-gui-screenshot.png" style="width:100%">
           </div>
           <div class="caption-container">
             <p id="defaultCaption"></p>

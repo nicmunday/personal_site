@@ -2,6 +2,7 @@
 from imports import newsprocessor
 import sys
 import datetime
+import pathlib
 
 stories = []
 
@@ -83,6 +84,9 @@ else:
     print("                    "
           "There Are Currently No Stories To Display\n\n")
 
-with open("/home/nic/bin/imports/"
-          "text_files/newsaccessed.txt", "w") as writer:
-    writer.write(str(my_news.now))
+current_path = pathlib.Path(__file__).parent
+news_file = current_path.joinpath("imports",
+                                  "text_files",
+                                  "newsaccessed.txt")
+
+news_file.write_text(str(my_news.now))

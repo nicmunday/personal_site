@@ -59,7 +59,7 @@
       display: none;
     }
     body{
-        font-size: 3em;
+        font-size: 2.5em;
         }
 
     p{
@@ -194,7 +194,7 @@ font-weight: 900;
     font-size: 80px;
   }
   .modal{
-    padding-top: 100px;
+    padding-top: 125px;
   }
   pre{
     font-size: .6em;

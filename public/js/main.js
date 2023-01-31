@@ -9,3 +9,5 @@ function toggleShowMore(linkName){
     }
 }
 
+$("title").text("Nic Munday - Home")
+

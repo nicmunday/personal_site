@@ -47,15 +47,50 @@ app.get("/camping/places", function(req, res) {
     res.render("camping/places.ejs", {pageName: "Favourite Places"});
 
 });
-app.get("/camping/test", function(req, res) {
-    res.render("camping/test.ejs", {pageName: "Favourite Places"});
-
-});
 
 app.get("/sight", function(req, res) {
     res.render("sight.ejs", {pageName: "Sight Loss"});
 
 });
+
+
+
+
+app.get("/webdev/examples/one-page-product", function(req, res) {
+    res.render("webdev/examples/one-page-product.ejs", {pageName: "My Portfolio"});
+
+});
+
+app.get("/webdev/examples/reimagined", function(req, res) {
+    res.render("webdev/examples/reimagined/reimagined.ejs", {pageName: "My Portfolio"});
+
+});
+
+app.get("/webdev/examples/blog-site", function(req, res) {
+    res.render("webdev/examples/blog-site.ejs", {pageName: "My Portfolio"});
+
+});
+
+app.get("/webdev/examples/reimagined/python", function(req, res) {
+    res.render("webdev/examples/reimagined/python.ejs", {pageName: "My Portfolio"});
+
+});
+
+app.get("/webdev/examples/reimagined/camping", function(req, res) {
+    res.render("webdev/examples/reimagined/camping.ejs", {pageName: "My Portfolio"});
+
+});
+    app.get("/webdev/examples/reimagined/camping", function(req, res) {
+        res.render("webdev/examples/reimagined/places.ejs", {pageName: "My Portfolio"});
+
+    });
+        app.get("/webdev/examples/reimagined/camping", function(req, res) {
+            res.render("webdev/examples/reimagined/gear.ejs", {pageName: "My Portfolio"});
+
+});
+
+
+
 
 app.listen(process.env.PORT || 7000, function(){
 

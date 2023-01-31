@@ -3,17 +3,110 @@
 
 <div class="lightSection">
   <div class="row">
-    <div class="col h1Container ">
-      <h1 class="otherH1s"><%= pageName %></h1>
-    </div>
-  </div>
-  <div class="row">
     <div class="col-lg-6">
+      <div class="sectionTextWrapper">
+        <div class="sectionTextLeft">
+          <span class="center">
+            <h5 class="pythonH5">This Site - A Re-Imagining</h5>
+          </span>
+          <p>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-6"">
+    <div class="col-lg-6">
+      <img src="/images/portfolio_images/reimagine-screenshot.png" alt="" class="pythonImage clickableImage" 
+      onclick="openModal('default', 0)" alt="LSTR4 screenshot -> ls -tr formatted in prettytable with Python">
+      <p class="thumbCaption">A redesign of this site, different look, different methods, same content.</p>
     </div>
   </div>
-  </div>
+</div>
+<div class="darkSection">
+  <div class="row">
+    <div class="col">
+      <span class="backToTopDark"><a href="#home">
+          <p>BACK TO TOP</p>
+        </a></span>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 hideAtSmall">
+      <br>
 
+      <p class="thumbCaption">A product sight selling you a thing that I bet you want to buy even though you know it doesn't exist.</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="sectionTextWrapper">
+        <div class="sectionTextRight">
+          <span class="center">
+            <h5 class="pythonH5">One-Page Product Site</h5>
+          </span>
+
+          <p>
+            Buy My App! It's Great! Or it would be if it existed, probably.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 hideAtBig">
+      <p class="thumbCaption">A product sight selling you a thing that I bet you want to buy even though you know it doesn't exist.</p>
+    </div>
+  </div>
+</div>
+<div class="lightSection">
+  <div class="row">
+    <div class="col">
+      <span class="backToTopLight"><a href="#home">
+          <p>BACK TO TOP</p>
+        </a></span>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="sectionTextWrapper">
+          <div class="sectionTextLeft">
+            <span class="center">
+              <h5 class="pythonH5">The Blog Badger</h5>
+            </span>
+            <p>
+            </p>
+          </div>
+        </div>
+        <span class="center">
+        </span>
+      </div>
+      <div class="col-lg-6">
+        <img src="../images/python_images/lstr4-screenshot.png" class="clickableImage pythonImage"
+          onclick="openModal('default', 0)" alt="LSTR4 screenshot -> ls -tr formatted in prettytable with Python">
+        <p class="thumbCaption">lstr4 - Linux command "ls -tr" Wrapped In Python prettytable Module For Reading Ease
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="defaultModal" class="modal">
+    <span class="close cursor" onclick="closeModal('default')">&times;</span>
+    <div class="modal-content">
+      <div class="defaultSlides">
+        <img src="../images/portfolio_images/reimagine-screenshot.png" style="width:100%">
+      </div>
+      <div class="defaultSlides">
+        <img src="../images/python_images/weather-screenshot.png" style="width:100%">
+      </div>
+      <div class="defaultSlides">
+        <img src="../images/python_images/news-l-screenshot.png" style="width:100%">
+      </div>
+      <div class="defaultSlides">
+        <img src="../images/python_images/today-screenshot.png" style="width:100%">
+      </div>
+      <div class="defaultSlides">
+        <img src="../images/python_images/news-gui-l-s-screenshot.png" style="width:100%">
+      </div>
+      <div class="defaultSlides">
+        <img src="../images/python_images/news-gui-screenshot.png" style="width:100%">
+      </div>
+      <div class="caption-container">
+        <p id="defaultCaption"></p>
+      </div>
+    </div>
+  </div>
 
 <%- include("../footer") -%>

@@ -33,16 +33,19 @@
       </div>
       <div class="col-lg-6">
         <pre class="anatomyPre"><code><%- include("../../server.js") -%></code></pre>
-
+        <p class="thumbCaption">The Node.js server.js file for this website - serves pages and some variables to URLs
+        </p>
       </div>
     </div>
   </div>
   <div class="darkSection">
     <div class="row">
       <div class="col">
-        <span class="backToTopDark"><a href="#home">
+        <span class="backToTopDark">
+          <a href="#home">
             <p>BACK TO TOP</p>
-          </a></span>
+          </a>
+        </span>
       </div>
     </div>
     <div class="row">
@@ -59,7 +62,7 @@
           <div class="sectionTextRight">
             <span class="center">
             </span>
-            <p>The Carousel on the main Camping & Hiking page, as well as the image galleries on the favourite places
+            <p>"!The Carousel on the main Camping & Hiking page, as well as the image galleries on the favourite places
               page are all seperate EJS templates and are imported at the correct time. This is mostly aesthetic rather
               than functional - carousels and galleries require a lot of code just repeated over and over for each image
               so this makes the main files much easier to deal with.
@@ -67,33 +70,28 @@
             <p>It also means that I can import these entire files straight into a text area on this page for your
               viewing
               pleasure. To the left is the entire carousel construction from the Camping & Hiking page.</p>
-
           </div>
         </div>
       </div>
       <div class="col-lg-6 ">
         <pre class="anatomyPre"><code>
           <%- include("anatomy-carousel") -%></code></pre>
+        <p class="thumbCaption">The bootstrap carousel from the camping main page</p>
       </div>
       <div class="col-lg-6 hideAtSmall">
-        <div class="row">
-          <div class="col">
-            <div class="sectionTextContainer">
-              <div class="sectionTextRight">
-                <p>The Carousel on the main Camping & Hiking page, as well as the image galleries on the favourite
-                  places
-                  page are all seperate EJS templates and are imported at the correct time. This is mostly aesthetic
-                  rather
-                  than functional - carousels and galleries require a lot of code just repeated over and over for each
-                  image
-                  so this makes the main files much easier to deal with.
-                </p>
-                <p>It also means that I can import these entire files straight into a text area on this page for your
-                  viewing
-                  pleasure. To the left is the entire carousel construction from the Camping & Hiking page.</p>
-
-              </div>
-            </div>
+        <div class="sectionTextContainer">
+          <div class="sectionTextRight">
+            <p>The Carousel on the main Camping & Hiking page, as well as the image galleries on the favourite
+              places
+              page are all seperate EJS templates and are imported at the correct time. This is mostly aesthetic
+              rather
+              than functional - carousels and galleries require a lot of code just repeated over and over for each
+              image
+              so this makes the main files much easier to deal with.
+            </p>
+            <p>It also means that I can import these entire files straight into a text area on this page for your
+              viewing
+              pleasure. To the left is the entire carousel construction from the Camping & Hiking page.</p>
           </div>
         </div>
       </div>
@@ -132,9 +130,10 @@
       </div>
       <div class="col-lg-6">
         <pre class="anatomyPre"><code> <%- include("../../public/js/modal.js") -%> </code></pre>
-       
+        <p class="thumbCaption">modal.js the javescript file containing functions to build an image lightbox</p>
       </div>
     </div>
+  </div>
   </div>
   </div>
   <div class="darkSection">
@@ -147,7 +146,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 hideAtSmall">
-         &nbsp;
+        &nbsp;
       </div>
       <div class="col-lg-6">
         <h5>Bootstrap</h5>
@@ -183,7 +182,8 @@
       </div>
       <div class="col-lg-6">
         <pre class="anatomyPre"><code> <%- include("anatomy-swan-gal") -%> </code></pre>
-
+        <p class="thumbCaption">hte HTML that builds an image gallery (and calls the modal.js functions from last
+          section)</p>
       </div>
       <div class="col-lg-6 hideAtSmall">
         <div class="sectionTextContainer">
@@ -261,8 +261,10 @@
       <div class="col-lg-6">
         <pre class="anatomyPre"><code>
           <%- include("../../public/css/media_queries.css") -%></code></pre>
+        <p class="thumbCaption">media_queries.css file</p>
       </div>
     </div>
+  </div>
   </div>
   </div>
   <div class="darkSection">
@@ -303,12 +305,12 @@
               and
               less with each click.
             </p>
-
           </div>
         </div>
       </div>
       <div class="col-lg-6 ">
         <pre class="anatomyPre shortPre"><code>$ <%- include("../../public/js/main.js") -%> </code></pre>
+        <p class="thumbCaption">The javascript file containing the code to change link names when they're clicked</p>
       </div>
       <div class="col-lg-6 hideAtSmall">
         <div class="sectionTextContainer">
@@ -331,7 +333,6 @@
               and
               less with each click.
             </p>
-
           </div>
         </div>
       </div>

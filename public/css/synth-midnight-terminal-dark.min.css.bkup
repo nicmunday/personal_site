@@ -1,5 +1,3 @@
-
-
 /*!
   Theme: Synth Midnight Terminal Dark
   Author: Michaël Ball (http://github.com/michael-ball/)
@@ -9,17 +7,16 @@
 */
 pre code.hljs {
   display: block;
-  /* overflow: hidden;  */
+  overflow: scroll;
   padding: 1em
 }
-
 code.hljs {
   padding: 3px 5px
 }
 
 .hljs {
-  color: #81f7dd;
-  /* background: #fff */
+  color: #69ddfa;
+  background: #444
 }
 
 .hljs ::selection,

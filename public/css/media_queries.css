@@ -199,6 +199,10 @@ font-weight: 900;
   pre{
     font-size: .6em;
   }
+  .withImagePre{
+    margin: 3em 9% 0 9%;
+  
+  }
   }
   
   /* END 992 WIDTH MEDIA QUERIES */

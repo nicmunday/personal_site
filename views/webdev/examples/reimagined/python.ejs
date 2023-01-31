@@ -1,0 +1,186 @@
+<%- include("reim-header.ejs") -%>
+
+    <div class="mainContent">
+        <h1>Python Programming</h1>
+        <div class="aboutContainer">
+            <div class="aboutLeft">
+                <div class="aboutBox">
+                        <h3 class="pythonH5">Today</h3>
+                        <p>
+                            This is a script I use every day (as the name implies.) It's not a <em>lot</em> more complicated than
+                            the previous section, there's just more of it - in fact it includes both the weather and news scripts,
+                            but a lot more besides.
+                          </p>
+                          <p>
+                            But it's along the same lines. It's basically all the information I might want for the day in one
+                            place.
+                            So the weather, how many new news stories there are since I last read the news, multiple types of
+                            reminders (ones I set in a reminders.txt text file, urgent ones from a different file that get
+                            highlighted, plus ones pulled from my calendar or the day - it tells me when it's bin day tomorrow
+                            and which bin it is (who sometimes forgets that? Be honest.) and it tells me when it's been 12 days
+                            or longer since I charged my smartwatch (which usually lasts 14)).
+                          </p>
+                          <p>
+                            It has any events from my google calendar with a date in the next ten days as well as from my
+                            family's shared calendar, it tells me what the tides are doing near me from the tidetimes.org RSS
+                            feed since ocassionally I like to get on a train and go to the beach for a long walk. And it has
+                            the RSS feed or my personal myspisodes.com account so I can see what's on TV today and tomorrow or
+                            what was on yesterday that I might need to watch.
+                          </p>
+                          <p>
+                            And also, because why not, it has the current moon phase which it calculates itself from a Python
+                            module called Skyfield (and which I'll admit I have no real clue how to use even though I figured
+                            out how to get that much information out of it). Also note the first time you run this the moon
+                            calculation
+                            takes ages, but it saves a file that lets it run a lot quicker the next time.
+                          </p>
+                          <p class="bold">
+                            The code for this script along with all its dependencies can be found on
+                            <a href="https://www.github.com/nicmunday/">My Github Account</a>, along with the entirety of this
+                            website.
+                          </p>
+                          <div class="spacer">
+                          </div>
+                          <p>
+                            Notes If you wanted to run this:
+                          </p>
+                          <ul>
+                            <li>
+                              Getting the calendar to work is quite involved. You need a google authorization token (a
+                              credentials.json) which you have to get from Google. You can run the script with the "-c"
+                              option to disable the calendar functionality, though.
+                            </li>
+                            <li>
+                              You need your own myepisodes account for that to work. You store the username and API token in
+                              imports/json/my_episodes_user-data.json.
+                            </li>
+                            <li>
+                              The calendar (as in the two months in the top right) is made using the linux "cal" command.
+                              I don't know what happens if you try to run this script on Windows with that in there, but I
+                              wouldn't think anything good.
+                            </li>
+                            <li>
+                              You can change the location of both the tides and the weather in the file
+                              imports/json/locations,json. They come pre-set to Essex.
+                            </li>
+                            <li>
+                              You need to set the locations of a whole bunch of text files that the script reads from and writes
+                              to
+                              in imports/json/today_settings.json.
+                            </li>
+                          </ul>
+                </div>
+
+            </div>
+            <div class="codeBox">
+
+                <p class="thumbCaption">imt.py - IMDB Title Search</p>
+                <pre class="shortPre"><code><%- include("python/script/today/today.py") -%> </code></pre>
+                <p class="thumbCaption">imt.py - IMDB Title Search</p>
+                <img src="/images/python_images/today-screenshot.png" alt="Python Today Script Screenshot">
+            </div>
+            
+        </div>
+        <div class="blockClass">&nbsp;</div>
+
+<hr>
+        <div class="aboutContainer">
+            <div class="aboutLeft">
+                <div class="aboutBox">
+                    <h3 class="pythonH5">Weather</h3>
+              <p>
+                This is basically the bare bones of a weather forecast for whatever is left of the current day, the next
+                day,
+                and the day after that, all organised and printed out in an easy-to-glance-at way that pleases me.
+              </p>
+              <p>
+                You can have it going across the page or down with the "-v" (vertical) flag at runtime - the default is
+                to
+                go across the page. You can look at the screenshot to see the difference.
+              </p>
+              The data comes from the BBC Weather RSS feed, and it's like I said in the heading of the section - yes I
+              could
+              get way more information from an API like openweather or Yahoo Weather, but this is the information that I
+              would likely pull out of that and so all the other information would then go to waste, making this a lot
+              more
+              sensible a choice.
+              <p>
+                ThreeDayWeather is the module that handles the feed - a constructor gets the feed and breaks down any
+                date
+                related things (published date, current), there's a method to take a feed and break it down into usable
+                data
+                (min, max, wind speed, etc) and then there are three methods which pass each of the days in the feed to
+                the
+                previous method for processing.
+              </p>
+              <p>
+                The weather script then takes this data, one day at a time, and wraps a prettytable construction around
+                it
+                and prints it out in an easy-to-read format that I enjoy. Simple!
+              </p>
+                </div>
+            </div>
+            <div class="codeBox">
+                <p class="thumbCaption">tesco.py - Get Shopping From List And Search Tesco For Each Item</p>
+                <pre class="shortPre"><code><%- include("python/script/weather/weather.py") -%> </code></pre>
+                <p class="thumbCaption">tesco.py - Get Shopping From List And Search Tesco For Each Item</p>
+                <pre class="shortPre"><code><%- include("python/script/weather/imports/threedayweather.py") -%> </code></pre>
+                <img src="/images/python_images/weather-screenshot.png" alt="">
+            </div>
+        </div>
+
+
+
+<hr>
+
+
+<div class="aboutContainer">
+            <div class="aboutLeft">
+                <div class="aboutBox">
+                    <h3 class="pythonH5">GUI News</h3>
+                <p>
+                  I originally wrote this just so I'd have a GUI program to put here and now I love it!
+                </p>
+                <p>
+                  I didn't think I'd have much use for GUI programs for my own personal use, which is why everything
+                  else
+                  is a CL script - I just find the command line faster most of the time. But given that the news command
+                  line script has more potential options than the ultra-comprehensive today script, it is actually a
+                  very
+                  sensible choice for a graphical program.
+                </p>
+                <p>
+                  All the options such as whether to display links/summaries/publish dates are now check boxes, as is
+                  whether
+                  you want new stories or not, and then you use radio buttons to decide between all stories, today
+                  stories
+                  and not-today stories.
+                </p>
+                <p>
+                  Clicking boxes for those options (and in fact the default ones are the ones I use almost always) is a
+                  lot
+                  simpler than writing out command line options, plus the use of different colours makes it a lot easier
+                  to read for me, and on top of that you can scroll with both the mouse and keyboard where in the
+                  command line
+                  only the mouse was possible.
+                </p>
+                <p>
+                  All in all, a success I am very happy with both functionally and aesthetically! (Can you tell that I
+                  have
+                  a fairly specific colour preference?)
+                </p>
+                </div>
+                <img src="/images/python_images/news-gui-l-s-screenshot.png" alt="">
+            </div>
+            <div class="codeBox">
+                <p class="thumbCaption">tesco.py - Get Shopping From List And Search Tesco For Each Item</p>
+                <pre class="shortPre"><code><%- include("python/script/tesco.py") -%> </code></pre>
+                <img src="/images/python_images/news-gui-l-s-screenshot.png" alt="">
+            </div>
+            <div class="belowAboutBox">
+            </div>
+        </div>
+    </div>
+
+
+    <%- include("reim-footer.ejs") -%>

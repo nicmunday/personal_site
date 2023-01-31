@@ -1,0 +1,114 @@
+@media (min-width: 3500px){
+    .maincontent{
+        margin-right: 40%;
+    }
+}
+@media (min-width: 3000px){
+    .maincontent{
+        margin-right: 30%;
+    }
+}
+@media (min-width: 2500px){
+    .maincontent{
+        margin-right: 20%;
+    }
+}
+
+@media (min-width: 2000px){
+    .maincontent{
+        margin-right: 10%;
+        min-height:65%
+    }
+}
+
+@media (max-width: 1200px ){
+    
+    .menuButton{
+        display: block;
+        z-index: 2;
+        text-align: left;
+        font-size: 6rem;
+    }
+    .menuB{
+        display:none;
+        width:100%;
+        top:0;
+        font-size: 5rem;
+        border-radius: 0;
+        z-index: 1;
+        /* left: 0;
+        top: 20%; */
+        border:none;
+        background-color: #677a99;
+    }
+    .menuB a, .menuB a:visited{
+        color: #fff;
+        text-decoration: none;
+    }
+    .menuB li{
+        font-size: 3rem;
+    }
+    .menuB .fa-solid{
+        font-size: 2.5rem;
+    }
+
+    .mainContent{
+        margin: 0 10px;
+    }
+    h1, #mainpage h1{
+        padding: 0;
+    }
+}
+@media (max-width: 992px){
+    .menuButton{
+        /* font-size: 3rem; */
+    }
+    .aboutLeft, .codebox, .imageLeftBox{
+        width: 85%;
+
+    }
+    .selfieContainer{
+        margin: 50px 0;
+    }
+    .selfie{
+        width:500px;
+        height: 500px;
+    }
+    #mainpage h1{
+        font-size: 11rem;
+    }
+    h1{
+        font-size: 7rem;
+    }
+    h2{
+        font-size: 7rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-family: Montserrat;
+        color: #444;
+        font-weight: 500;
+    }
+    p {
+        font-family: Lato;
+        font-weight: 400;
+        font-size: 1em;
+        color: #282828;
+        text-align: left;
+        padding: 10%;
+    }
+    .aboutBox p {
+        font-size: 2em;
+        padding: 1% 2%;
+        
+    }
+    .contactIcon{
+        font-size: 4rem;
+    }
+}
+@media (max-width:500px){
+    body{
+        background-image: none;
+        background-color: red !important;
+    }
+}

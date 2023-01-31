@@ -27,7 +27,10 @@ function showDefaultSlides(modalName, n) {
     slides[i].style.display = "none";
    }
   $(slides[defaultSlideIndex]).css("display", "block");
-  $("#" + modalName + "Caption").text($("." + modalName + "Image").eq([defaultSlideIndex]).attr("alt"));
+  
+  $("#" + modalName + "Caption").text($("." + modalName + 
+  "Image").eq(defaultSlideIndex).attr("alt"));
+
   $("html").css("overflow-x", "hidden")
   $(document).keydown(function(event){
     if(event.which === 27){

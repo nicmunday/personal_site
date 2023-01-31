@@ -44,9 +44,10 @@
     .menuB a, .menuB a:visited{
         color: #fff;
         text-decoration: none;
+
     }
     .menuB li{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .menuB .fa-solid{
         font-size: 2.5rem;
@@ -55,13 +56,21 @@
     .mainContent{
         margin: 0 10px;
     }
-    h1, #mainpage h1{
-        padding: 0;
-    }
 }
 @media (max-width: 992px){
+    h1, #mainpage h1{
+        transform: none;
+        margin: 5% auto;
+
+    }
+    .menuB ul{
+        margin-left: calc(20vw);
+    }
     .menuButton{
         /* font-size: 3rem; */
+    }
+    .menuB{
+        font-size: 5rem;
     }
     .aboutLeft, .codebox, .imageLeftBox{
         width: 85%;
@@ -75,7 +84,7 @@
         height: 500px;
     }
     #mainpage h1{
-        font-size: 11rem;
+        font-size: 9rem;
     }
     h1{
         font-size: 7rem;
@@ -104,11 +113,5 @@
     }
     .contactIcon{
         font-size: 4rem;
-    }
-}
-@media (max-width:500px){
-    body{
-        background-image: none;
-        background-color: red !important;
     }
 }

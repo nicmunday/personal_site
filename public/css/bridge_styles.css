@@ -1,0 +1,94 @@
+
+body{
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.topSection{
+    background-image: url("/images/bridge_images/tower_bridge.jpg");
+    width: 100%;
+    min-height: 700px;
+    background-position: 50% 10% ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:0;
+}
+
+.mainhead{
+    position: absolute;
+    left:5%;
+    bottom: 55%;
+    display: inline-block;
+    margin: 0;
+    padding: 0px 20px;
+    color: #fff;
+    border: 1px solid #777;
+    font-size: 1.8em;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter:blur(3px);
+}
+.mainhead h1{
+    padding: 0;
+    margin: 0;
+}
+
+.brochure{
+    position: absolute;
+    right:5%;
+    bottom: 55%;
+    display: inline-block;
+    padding: 0px 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #777;
+    font-size: 1em;
+    max-width: 20%;
+    backdrop-filter:blur(10px);
+}
+
+p{
+    font-size:  1.3rem;
+}
+
+ .imageBox{
+ /*   display: inline-block;
+
+    width:calc(101vw / 4);
+    height:calc(95vw / 8); */
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.imageBox img{
+    width:calc(120vw / 4);
+    height:calc(95vw / 6.5);
+    margin: 0 6px 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    transition: 1s;
+    overflow:hidden;
+}
+
+.imageBox img:hover{
+   transform: scale(1.1);
+}
+
+.gallery{
+    display: flex;
+    margin: 5vw 0;
+    border: 1px solid #444;
+    max-height: calc((95vw / 8) + 50px);
+    max-width: 110vw;
+    overflow-x:visible;
+}
+
+.gallery h2{
+    padding:  0 0 0 10vw;
+    margin: 0;
+    font-size: 2rem;
+}

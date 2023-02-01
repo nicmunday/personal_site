@@ -4,14 +4,14 @@ function showMenuItem(name, name2){
     var classs = classList.split(/\s+/);
     //alert(classs[0])
     for(i=0;i<classs.length; i++){
-        if(classs[i] == "fa-angle-down"){
-            $("#" + name2).removeClass("fa-angle-down");
-            $("#" + name2).addClass("fa-angle-up");
+        if(classs[i] == "fa-angles-down"){
+            $("#" + name2).removeClass("fa-angles-down");
+            $("#" + name2).addClass("fa-angles-up");
         }
-        else if(classs[i] == "fa-angle-up"){
+        else if(classs[i] == "fa-angles-up"){
 
-            $("#" + name2).removeClass("fa-angle-up");
-            $("#" + name2).addClass("fa-angle-down");
+            $("#" + name2).removeClass("fa-angles-up");
+            $("#" + name2).addClass("fa-angles-down");
         }
 
     }
@@ -19,10 +19,12 @@ function showMenuItem(name, name2){
 
 function showMainMenu(){
     $(".menuB").slideToggle();
-    if($(".menuButton a").css("color") == "rgb(103, 122, 153)"){
-        $(".menuButton a").css("color", "#fff");
-    }else{
-        $(".menuButton a").css("color", "#677a99");
-
+    $(".menuButtonInside").toggle();
+    // if($(".menuButton a").css("color") == "rgb(103, 122, 153)"){
+    //     $(".menuButton a").css("color", "#fff");
     }
-}
+    // else{
+        // $(".menuButton a").css("color", "#677a99");
+
+    // }
+// }

@@ -150,22 +150,12 @@ a:active {
 }
 
 
-.darkSection a {
+.darkSection a, .darkSection a:visited{
   color: #81f7dd;
   text-decoration: underline;
 
 }
 
-.darkSection a:visited {
-  color: #81f7dd;
-  text-decoration: underline;
-
-}
-
-.darkSection a:hover {
-  color: #81f7dd;
-  text-decoration: underline;
-}
 
 
 /* BUTTON LINKS */
@@ -342,15 +332,25 @@ a:active {
 
 .sectionTextLeft {
   width: 60%;
-  margin: 2em 0 2em 20%;
+  height:calc(100% - 6rem);
+  margin: 2em auto;
+  /* 2em 0 2em 20%; */
   text-align: left;
-  /* font-weight:450; */
+  padding: 2rem;
+  /* font-w
+  eight:450; */
 }
-
+.sectionTextContainer{
+  width: 100%;
+  height:100%;
+  margin: 0;
+}
 .sectionTextRight {
   width: 60%;
+  height:calc(100% - 6rem);
   margin: 2em 10% 2em 20%;
   text-align: left;
+  padding: 2rem;
 }
 
 .sectionTextLeftWithHeading {
@@ -363,11 +363,6 @@ a:active {
   width: 60%;
   margin: 0 0 2em 20%;
   text-align: left;
-}
-
-.sectionTextContainer {
-  text-align: left;
-  width: 100%
 }
 
 .darkSectionHr,
@@ -435,13 +430,10 @@ a:active {
   padding: 2em;
   margin: 0 23% 0 17%;
   border: 2px #2d7370 solid;
-  border-radius: 20%;
-  max-width: 700px;
+  border-radius: 30px;
 }
 .aboutBox p {
-  color: #2d7370;
   text-align: left;
-  max-width: 700px;
 }
 
 /* END MAIN */
@@ -539,7 +531,7 @@ pre{
   /* margin-left: 7%; */
   /* margin-right: 25%; */
   margin: 2em auto 0 auto;
-  border-radius: 2%;
+  border-radius: 30px;
 
 }
 .thumbCaption{

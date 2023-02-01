@@ -1,13 +1,27 @@
 body{
     margin: auto !important;
     border: 0 !important;
-    background-color: #00ff00 !important;
+    background-color: #e3ecfa !important;
     /* 97bcf7 */
     color: #677a99;
     text-align: center;
     background-image: linear-gradient(30deg, #677a99, 65%, #e3ecfa); 
     /* a9cafc 6ea7ff */
     font-family: Montserrat;
+}
+.backToReality{
+    position: fixed;
+    bottom:0;
+    right:0;
+    background-color: #000;
+    padding: 5px 30px
+}
+.backToReality a, .backToReality a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+.backToReality a:hover{
+    color: #ffaaaa;;
 }
 a, a:visited{
     color: #003399;
@@ -28,11 +42,12 @@ h1, h2{
 #mainPage h1{
     font-size: 7rem;
     transform: rotate(-3deg);
-    margin-right: 30%;;
+    margin: 0 0 0 25%;
 }
 h1{
     font-size: 5rem;
-    padding-top: 2rem;
+    margin: 0 0 0 25%;
+    text-align: left;
 }
 h2{
     font-size: 3rem;
@@ -59,12 +74,12 @@ pre{
     text-align: left;
     background-color: #000;
     color: #ddd;
-    padding: 20px;
-    border-top-left-radius: 10%;
+    padding: 40px;
+    border-top-left-radius: 30px;
     max-height: 25em;
     overflow:scroll;
 }
-.menuButton{
+.menuButton, .menuButtonInside{
     display:none;
     position: relative;
     left: 0;
@@ -72,9 +87,15 @@ pre{
     text-align: left;
     padding: 20px 2rem 0 20px;
 }
+.menuButtonInside, .menuButton{
+    font-size: 3rem;
+}
 .menuButton a, .menuButton a:visited{
     color: #677a99;
 
+}
+.menuButtonInside a, .menuButtonInside a:visited{
+    color: #fff;
 }
 .menuB{
     position:fixed;
@@ -123,11 +144,11 @@ pre{
     padding: 1em 0;
     font-size: 1.2rem;
 }
-#webdevSubMenu, .fa-angles-up, #campingSubMenu{
+#webdevSubMenu, #campingSubMenu{
     display: none;
 }
-.menuB .fa-solid{
-    font-size: .7rem;
+.menuB .fa-angles-down, .fa-angles-up{
+    font-size: .8rem;
 }
   .row{
     border:1px;
@@ -169,7 +190,8 @@ pre{
 }
 .belowAboutBox img{
     width: 39%;
-    margin: 5%
+    margin: 5%;
+    border-radius: 30px;
 
 }
 .aboutLeft img{
@@ -195,10 +217,14 @@ pre{
     display:block;
 }
 hr{
-    width: 60%;
-    border: 3px solid #677a99;
+    width: 70%;
+    border: 3px solid #596985;
     border-radius: 50%;
+    margin: 5% auto;
 
+}
+.clickableImage{
+    cursor: pointer;
 }
 .selfieContainer{
     margin: 0% 0 0 15%; 
@@ -211,7 +237,19 @@ hr{
     border-radius: 50%;
 
   }
-
+  .galImage{
+    display: inline-block;
+    margin: 2%;
+    width: 45%;
+  }
+  .lightboxImages{
+    margin-top: 20%;;
+  }
+  .caption-container p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+  }
 .contactIcon, .contactIcon a, .contactIcon a:visited{
     display: inline-block;
     margin: 0 3% 1% 3%;

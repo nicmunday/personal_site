@@ -56,8 +56,8 @@ app.get("/sight", function(req, res) {
 
 
 
-app.get("/webdev/examples/one-page-product", function(req, res) {
-    res.render("webdev/examples/one-page-product.ejs", {pageName: "My Portfolio"});
+app.get("/webdev/examples/bridge", function(req, res) {
+    res.render("webdev/examples/bridge/bridge.ejs", {pageName: "My Portfolio"});
 
 });
 
@@ -75,20 +75,10 @@ app.get("/webdev/examples/reimagined/python", function(req, res) {
     res.render("webdev/examples/reimagined/python.ejs", {pageName: "My Portfolio"});
 
 });
-
-app.get("/webdev/examples/reimagined/camping", function(req, res) {
-    res.render("webdev/examples/reimagined/camping.ejs", {pageName: "My Portfolio"});
-
-});
-    app.get("/webdev/examples/reimagined/camping", function(req, res) {
+    app.get("/webdev/examples/reimagined/places", function(req, res) {
         res.render("webdev/examples/reimagined/places.ejs", {pageName: "My Portfolio"});
 
     });
-        app.get("/webdev/examples/reimagined/camping", function(req, res) {
-            res.render("webdev/examples/reimagined/gear.ejs", {pageName: "My Portfolio"});
-
-});
-
 
 
 

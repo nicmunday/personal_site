@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="/css/reimagined.css">
     <link rel="stylesheet" href="/css/reim-media.css">
+    <link rel="stylesheet" href="/css/imageGallery.css">
 
 </head>
 
@@ -23,6 +24,9 @@
         <a href="#None" onclick="showMainMenu()"><i class="fa-solid fa-bars"></i></a>
     </div>
     <div class="menuB">
+        <div class="menuButtonInside">
+            <a href="#None" onclick="showMainMenu()"><i class="fa-solid fa-bars"></i></a>
+        </div>
         <ul>
             <li>
                 <a href="/webdev/examples/reimagined">Home</a>
@@ -30,14 +34,14 @@
             </li>
             <li>
                 <a href="#webdevSubMenu" onclick="showMenuItem('webdevSubMenu', 'webdevArrows')">Web Design     <i
-                        id="webdevArrows" class="fa-solid fa-angle-down"></i></a>
+                        id="webdevArrows" class="fa-solid fa-angles-down"></i></a>
                 <div id="webdevSubMenu">
                     <ul>
                         <li class="strikey">
-                            <a href="webdev/examples/reimagined/webdev/anatomy.ejs">Anatomy Of <br>This Website</a>
+                            <a href="#None">Anatomy Of <br>This Website</a>
                         </li>
                         <li class="strikey">
-                            <a href="webdev/examples/reimagined/webdev/">My Portfolio</a>
+                            <a href="#None">My Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -47,26 +51,30 @@
             </li>
             <li>
                 <a href="#campingSubMenu" onclick="showMenuItem('campingSubMenu', 'campingArrows')">Camping &amp; Hiking <i
-                        id="campingArrows" class="fa-solid fa-angle-down"></i></a>
+                        id="campingArrows" class="fa-solid fa-angles-down"></i></a>
                 <div id="campingSubMenu">
                     <ul>
-                        <li>
-                            <a href="webdev/examples/reimagined/camping/camping.ejs">Camping Home</a>
+                        <li class="strikey">
+                            <a href="#None">Camping Home</a>
                         </li>
                         <li>
-                            <a href="webdev/examples/reimagined/camping/places.ejs">Favourite Places</a>
+                            <a href="/webdev/examples/reimagined/places">Favourite Places</a>
                         </li>
-                        <li>
-                            <a href="webdev/examples/reimagined/camping/gear.ejs">Camping Gear</a>
+                        <li class="strikey">
+                            <a href="#None">Camping Gear</a>
                         </li>
                     </ul>
                 </div>
             </li>
             <li class="strikey">
-                <a href="/webdev/examples/reimagined/sight">Sight Loss</a>
+                <a href="#None">Sight Loss</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
             </li>
         </ul>
+    </div>
+
+    <div class="backToReality">
+        <a href="/webdev/portfolio">Back To The Real Site</a>
     </div>
